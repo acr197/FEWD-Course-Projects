@@ -1,0 +1,167 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	line-height: 1.7em;
+}
+
+h1 {
+	font-weight: bold;
+	color: white;
+	padding-left: 50px;
+	padding-top: 20px;
+	font-size: 22px;
+}
+
+h2 {
+	color:white;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 100px;
+	font-size: 30px;
+}
+
+h3 {
+	font-weight: bold;
+	padding-top: 40px;
+	color: black;
+	padding-left: 70px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+h4 {
+	font-weight: bold;
+	padding-top: 25px;
+	color: yellow;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+ul {
+	padding-top: 30px;
+}
+
+li {
+	padding-left: 100px;
+	padding-top: 8px;
+}
+
+blockquote {
+	text-align: center;
+	font-style: italic;
+	color: white;
+	font-size: 22px;
+	width: 370px;
+	margin:auto;
+	padding-top: 40px;
+	font-weight: lighter;
+}
+
+.amanda {
+	padding-top: 10px;
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin:auto;
+}
+
+.bullets {
+	box-sizing: border-box;
+	width: 400px;
+}
+
+.home {
+	height: 500px;
+	background-image: url("../images/header_bg.jpg")
+} 
+
+.getitnow {
+	text-align: center;
+	width: 20%;
+	height: 30px;
+	background-color: yellow;
+	color: black;
+	margin: auto;
+	border-radius: 2px;
+	margin-top: 60px;
+}
+
+.getitnow a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.benefits {
+	height: 400px;
+	background-color: white;
+}
+
+.quote {
+	background-color: black;
+	height: 250px;
+	background-image: url("../images/testimonial_bg.jpg")
+}
+
+.cta {
+	background-color: yellow;
+	height: 60px;
+	padding-top: 20px;
+	vertical-align: middle;
+}
+
+.signupnow {
+	vertical-align: middle;
+	text-align: center;
+	width: 25%;
+	height: 25px;
+	background-color: #001a33;
+	color: black;
+	margin: auto;
+	margin-top: 8px;
+	border-radius: 2px;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.signupnow a {
+	vertical-align: middle;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.footer {
+	background-color: black;
+	height: 230px;
+	text-align: center;
+}
+
+.social {
+	align-content: center;
+	padding: 20px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+}
+
+.copyright {
+	color: white;
+	font-size: 10px;
+	padding-top: 30px;
+}
+
+.benefitsparagraph {
+	padding-left: 70px;
+	width: 400px
+}
+
+/*list bullets might not show up. You need to edit reset or normalize stylesheet. One of them is turning off bullets. the code is
+	ul {
+	list-style: disc outside;
+	} */
+
+/* google text align: justify; OR something like that might align the quote right */
