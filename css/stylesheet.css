@@ -126,6 +126,45 @@ footer {
 	margin-top: -4px;
 }
 
+/* PROFILE SECTIONS */
+
+.profile-top {
+	width: 100%;
+	background-color: #2f3441;
+	height: 100px;
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 40px;
+}
+
+.profile-header-left {
+	width: 50%;
+	height: 150px;
+	float: left;
+	background-color: grey;
+	display: inline-block;
+	text-align: center;
+	background: linear-gradient(to left bottom, #2f3441 50%, #212531 50%);
+}
+
+.profile-header-right {
+	width: 50%;
+	height: 150px;
+	float: right;
+	background-color: grey;
+	display: inline-block;
+	background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+}
+
+.profile-header-right {
+	width: 50%;
+	height: 150px;
+	float: left;
+	background-color: grey;
+}
+
 .profile-1-section-left {
 	height:100%;
 	width: 50%;
@@ -161,18 +200,21 @@ footer {
 /* RESUME */
 
 .resume-box {
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-family: 'Abril Fatface';
-	font-size: 40px;
 	padding-top: 40px;
+	padding-bottom: 50px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	padding-top: 65px;
+	height: 1010px;
+		text-align: center
 }
 
-.123 {
-	height: 100%;
+.pdf-contain {
+	height: 600px;
 	width: 100%;
-	position: fixed;
+	margin-top: 70px;
+	position: absolute;	
+	text-align: center
 }
 
 /* CONTACT */
@@ -189,16 +231,23 @@ footer {
 
 .contact-text {
 	text-align: center;
-	font-family: 'Abril Fatface';
 	font-size: 40px;
-	padding-bottom: 80px;
-	padding-top: 120px;
+	margin-bottom: 60px;
+	padding-top: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-border {
+	border-bottom: solid 3px red;
+	width: 3%;
+	margin:auto;
 }
 
 .contact-grid {
 	width: 450px;
 	height: 450px;
 	margin: auto;
+	margin-top: 60px;
 	box-sizing: border-box;
 }
 
