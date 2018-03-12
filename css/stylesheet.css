@@ -52,13 +52,14 @@ footer {
     text-decoration: none;
     padding-left: 20px;
     padding-top: 15px;
+    padding-right: 10px;
     font-size: 25px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 }
 
 .home {
-	background-color: grey;
+	background-color: black;
 }
 
 .home-left {
@@ -128,73 +129,258 @@ footer {
 
 /* PROFILE SECTIONS */
 
-.profile-top {
+.job-text {
+	font-size: 25px;
+	padding-bottom: 5px;
+}
+
+.job-subtext {
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+
+.degree-text {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.profile-text {
+	font-size: 25px;
+	line-height: 1.4;
+}
+
+.profile-upper-box {
+  	width: 100%; 
+  	height: 240px;
+    background: url(../images/WorkDesk.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: contain;
+	text-align: center;
+	padding-top: 150px;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 50px;
+}
+
+.profile-top-section {
+	height: 525px;
 	width: 100%;
-	background-color: #2f3441;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.profile-top-left {
+	float: left;
+	width: 20%;
+	height: 80%;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.profile-top-right {
+	float: right;
+	width: 70%;
+	height: 80%;
+	font-size: 19px;
+	padding-right: 60px;
+	padding-top: 40px;
+	line-height: 1.4;
+}
+
+.profile-middle-section {
+	height: 600px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	background-color: #ebebe0;
+}
+
+.achievements-text {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: underline;
+}
+
+.profile-middle-section-left {
+	height: 80%;
+	width: 20%;
+	float:left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.profile-middle-section-middle {
+	float:left;
+	display:inline-block;
+	width: 25%;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.profile-middle-section-left-top {
+	height: 50%;
+}
+
+.profile-middle-section-left-bottom {
+	height: 30%;
+	padding-top: 20px;
+}
+
+.profile-middle-section-middle-top {
+	height: 50%;
+}
+
+.profile-middle-section-middle-bottom {
+	height: 30%;
+	padding-top: 40px;
+	line-height: 1.4;
+}
+
+.profile-middle-section-right {
+	height: 80%;
+	width: 30%;
+	background-color: white;
+	float:right;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	border: solid 2px lightgrey;
+}
+
+.profile-bottom-section {
+	height: 1000px;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.profile-bottom-section-left {
+	height: 80%;
+	width: 20%;
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.profile-bottom-section-right {
+	float:right;
+	width:70%;
+	padding-top: 40px;
+	height: 80%;
+	padding-right: 60px;
+}
+
+/* PERSONAL PROFILE */
+
+.pers-top {
+	width: 100%;
 	height: 100px;
 	clear: both;
 	text-align: center;
-	padding-top: 50px;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 40px;
+	padding-top: 120px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	color: white;
+	padding-bottom: 30px;
 }
 
-.profile-header-left {
+.pers-top-section {
+	background-image: url(../images/drums.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: contain;
+	width: 100%;
+	height: 400px;
+}
+
+.pers-top-text {
+   font-size: 20px;
+   text-align: center;
+   font-style: italic;
+   font-weight: 300;
+   padding-top: 55px;
+}
+
+.pers-header-left {
 	width: 50%;
 	height: 150px;
 	float: left;
-	background-color: grey;
 	display: inline-block;
 	text-align: center;
-	background: linear-gradient(to left bottom, #2f3441 50%, #212531 50%);
+	position: inherit;
+	background: linear-gradient(to left bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 50%);
 }
 
-.profile-header-right {
+.pers-header-right {
 	width: 50%;
 	height: 150px;
 	float: right;
-	background-color: grey;
 	display: inline-block;
-	background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+	background: linear-gradient(to right bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 50%);
 }
 
-.profile-header-right {
+.profile-header-right { /* WEHERE IS THIS IN HTML? */
 	width: 50%;
 	height: 150px;
 	float: left;
-	background-color: grey;
 }
 
-.profile-1-section-left {
-	height:100%;
-	width: 50%;
+.pers-section-about {
+	height: 400px;
+	clear: both;
+}
+
+.pers-upper-left img {
+    position: relative;
+    width: 50%;
 	float: left;
+	padding-bottom: 40px;
 }
 
-.profile-1-section-right {
-	height: 100%;
-	width: 50%;
+.pers-upper-right {
+	width: 45%;
 	float: right;
+	display: inline-block;
+	padding-right: 20px;
 }
 
-.profile-1-upper-left {
+.pers-section-bottom {
 	height: 500px;
-	background-color: lightgrey;
+	width: 100%;
+	clear: both;
 }
 
-.profile-1-bottom-left {
-	height: 100%;
-	font-family: 'Abril Fatface';
+.pers-bottom-left {
+	width: 45%;
+	float: left;
+	padding-left: 40px;
 }
 
-.profile-1-upper-right {
-	height: 100%;
-	font-family: 'Abril Fatface';
+.pers-bottom-right {
+	float: right;
+	width: 45%;
+	padding-top: 200px;
+	padding-right: 40px;
 }
 
-.profile-1-bottom-right {
-	height: 500px;
-	background-color: lightgrey;
+.pers-title-text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.pers-body-text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 /* RESUME */
