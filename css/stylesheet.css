@@ -39,6 +39,13 @@ footer {
 	color: white;
 }
 
+iframe {
+	float: left;
+	padding: 20px;
+	margin-bottom: 80px;
+	box-sizing: border-box;
+}
+
 .clearfix::after {
 	display: block;
 	content:  "";
@@ -145,8 +152,13 @@ footer {
 }
 
 .profile-text {
-	font-size: 25px;
-	line-height: 1.4;
+	font-size: 19px;
+	line-height: 1.6;
+}
+
+.profile-header-text {
+	font-size: 30px;
+	line-height: 1.6;
 }
 
 .profile-upper-box {
@@ -173,19 +185,21 @@ footer {
 .profile-top-left {
 	float: left;
 	width: 20%;
-	height: 80%;
 	padding-top: 40px;
 	padding-left: 40px;
+	box-sizing: border-box;
 }
 
 .profile-top-right {
 	float: right;
-	width: 70%;
+	width: 80%;
 	height: 80%;
 	font-size: 19px;
 	padding-right: 60px;
 	padding-top: 40px;
 	line-height: 1.4;
+	box-sizing: border-box;
+	clear: none;
 }
 
 .profile-middle-section {
@@ -209,23 +223,26 @@ footer {
 	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 40px;
+	box-sizing: border-box;
 }
 
 .profile-middle-section-middle {
 	float:left;
 	display:inline-block;
-	width: 25%;
+	width: 40%;
 	padding-top: 40px;
-	padding-left: 40px;
+	box-sizing: border-box;
 }
 
 .profile-middle-section-left-top {
 	height: 50%;
+	clear: both;
 }
 
 .profile-middle-section-left-bottom {
 	height: 30%;
 	padding-top: 20px;
+	clear: both;
 }
 
 .profile-middle-section-middle-top {
@@ -247,11 +264,12 @@ footer {
 	font-size: 17px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	margin-right: 40px;
+	margin-right: 80px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 30px;
 	border: solid 2px lightgrey;
+	box-sizing: border-box;
 }
 
 .profile-bottom-section {
@@ -328,7 +346,7 @@ footer {
 	background: linear-gradient(to right bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 50%);
 }
 
-.profile-header-right { /* WEHERE IS THIS IN HTML? */
+.profile-header-right { 
 	width: 50%;
 	height: 150px;
 	float: left;
@@ -339,48 +357,92 @@ footer {
 	clear: both;
 }
 
-.pers-upper-left img {
+.pers-upper-left  {
     position: relative;
     width: 50%;
 	float: left;
 	padding-bottom: 40px;
+	padding:40px;
+	box-sizing: border-box;
+}
+
+.pers-upper-left img {
+	padding-bottom: 40px;
+} 
+
+.pers-middle-photo {
+	background-image: url(../images/China2017.jpg);
+	height: 350px;
+	width: 100%;
+	clear: both;
+	border: solid 1px grey;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 2000px 1000px;
+	background-position: bottom;
 }
 
 .pers-upper-right {
-	width: 45%;
+	width: 50%;
 	float: right;
 	display: inline-block;
-	padding-right: 20px;
+	padding:40px;
+	box-sizing: border-box;
+	text-align: justify;
 }
 
 .pers-section-bottom {
 	height: 500px;
 	width: 100%;
 	clear: both;
+	padding-top: 100px;
 }
 
 .pers-bottom-left {
-	width: 45%;
+	width: 50%;
 	float: left;
-	padding-left: 40px;
+	padding:40px;
+	box-sizing: border-box;
+	text-align: justify;
 }
 
 .pers-bottom-right {
 	float: right;
-	width: 45%;
-	padding-top: 200px;
-	padding-right: 40px;
+	width: 50%;
+	/* padding-top: 200px; */
+	padding: 40px;
+	box-sizing: border-box;
 }
+
+.pers-bottom-right img {
+	padding-bottom: 40px;
+	padding-top: 40px;
+} 
 
 .pers-title-text {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
+	padding-bottom: 15px;
 }
 
 .pers-body-text {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
+	padding-bottom: 40px;
+}
+
+.pers-bottom-photo {
+	background-image: url(../images/Hawaiiblackrock.jpg);
+	height: 350px;
+	width: 100%;
+	clear: both;
+	border: solid 1px grey;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100% 420px; 
+	background-position: bottom;
+	background-color: darkgrey;
 }
 
 /* RESUME */
@@ -392,7 +454,7 @@ footer {
 	font-size: 40px;
 	padding-top: 65px;
 	height: 1010px;
-		text-align: center
+	text-align: center;
 }
 
 .pdf-contain {
@@ -400,7 +462,22 @@ footer {
 	width: 100%;
 	margin-top: 70px;
 	position: absolute;	
-	text-align: center
+	text-align: center;
+}
+
+.resume-button {
+	width: 200px;
+	height: 45px;
+	border: solid 3px rgba(128,128,128,0.8);
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	padding-top: 30px;
 }
 
 /* CONTACT */
