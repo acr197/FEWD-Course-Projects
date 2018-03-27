@@ -2,9 +2,12 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<!-- GOOGLE FONTS HERE -->
 	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
-	<title>Andrew Ryan's Profile 1</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew Ryan">
+	<meta name="description" content="Andrew Ryan's Home Page ">
+	<title>Andrew Ryan</title>
 </head>
 <body>
 <!-- 
@@ -20,46 +23,45 @@
 		</nav>
 	</header>
 -->
-	<section class="home">
-		<div class="home-left">
-			<img src="images/greyscale-suit.jpg" width="100%" height="100%" alt="Andrews Profile Picture">
-			<div class="Hi">Hi, <br>I'm Andrew</div>
+<section class="home">
+	<div class="home-left">
+		<img src="images/greyscale-suit.jpg" width="100%" height="100%" alt="Andrews Profile Picture">
+		<div class="Hi">Hi, <br>I'm Andrew</div>
+	</div>
+	<div class="home-right">
+		<div class="home-grid-upper-left">
+			<a href="profile.html">
+				<img id='upper-left-hover' src="images/marketing profile.jpg" width="100%" height="100%">
+				<div class="home-grid-text hover-fx">
+					Professional Profile
+				</div>
+			</a>
 		</div>
-		<div class="home-right">
-			<div class="home-grid-upper-left">
-				<a href="profile.html">
-					<img src="images/marketing profile.jpg" width="100%" height="100%">
-					<div class="home-grid-text">
-						Profile 1
-					</div>
-				</a>
-			</div>
-			<div class="home-grid-upper-right">
-				<a  href="about.html">
-					<img src="images/new zealand mt cook.jpg"  width="100%" height="100%">
-					<div class="home-grid-text">Profile 2</div>
-				</a>
-			</div>
-			<div class="home-grid-lower-left">
-				<a href="resume.html">
-					<img src="images/contactforms.jpg"  width="100%" height="100%">
-					<div class="home-grid-text">Resume</div>
-				</a>
-			</div>
-			<div class="home-grid-lower-right">
-				<a href="contact.html">
-					<img src="images/resume-image.jpg"  width="100%" height="100%">
-					<div class="home-grid-text">Contact</div>
-				</a>
-			</div>
+		<div class="home-grid-upper-right">
+			<a href="about.html">
+				<img id='upper-right-hover' src="images/Africa2015.jpeg"  width="100%" height="100%">
+				<div class="home-grid-text">Personal Profile</div>
+			</a>
 		</div>
-	</section>
-
-	<footer>
-		<div class="footer-text">
+		<div class="home-grid-lower-left">
+			<a href="resume.html">
+				<img id='lower-left-hover' src="images/resume-image.jpg"  width="100%" height="100%">
+				<div class="home-grid-text">My Resume</div>
+			</a>
+		</div>
+		<div class="home-grid-lower-right">
+			<a href="contact.html">
+				<img id='lower-right-hover' src="images/contactforms.jpg" width="100%" height="100%">
+				<div class="home-grid-text">Contact Me</div>
+			</a>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="footer-text">
 		Copyright 2018.
-		</div>
-	</footer>
-
+	</div>
+</footer>
+<script src="js/index.js"></script>
 </body>
 </html>

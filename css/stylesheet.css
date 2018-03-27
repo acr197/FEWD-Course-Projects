@@ -1,6 +1,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 header {
@@ -18,6 +19,7 @@ nav {
   	padding-top: 22px;
   	text-align: right;
 }
+
 
 h1 {
 	color: yellow;
@@ -37,13 +39,14 @@ footer {
 	background-color: black;
 	clear: both;
 	color: white;
+
 }
 
 iframe {
 	float: left;
 	padding: 20px;
 	margin-bottom: 80px;
-	box-sizing: border-box;
+
 }
 
 .clearfix::after {
@@ -57,12 +60,26 @@ iframe {
 .nav-text {
 	color: white;
     text-decoration: none;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 10px;
+    padding: 25px;
     font-size: 25px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
+	transition: all ease 0.8s;
+}
+
+.nav-text-current {
+	color: black;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	background-color: white;
+}
+
+.nav-text:hover {
+    box-shadow: inset 200px 0 0 0 grey;
+    color: #fff;
 }
 
 .home {
@@ -105,13 +122,21 @@ iframe {
 	display: inline-block;
 	height: 100%;
 	width: 50%;
-	filter: brightness(30%); /*Get Text to be unaffects by brightness */
+}
+
+.transition {
+    transform: scale(1.2);
+   	transition: all 1s ;
 }
 
 .home-grid-upper-left {
 	height: 50%;
 	width: 50%;
 	float: left;
+	/*display: inline;*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+	/*transition: 0.6s;*/
 }
 
 .home-grid-upper-right {
@@ -161,9 +186,15 @@ iframe {
 	line-height: 1.6;
 }
 
+.profile-header-right { 
+	width: 50%;
+	height: 150px;
+	float: left;
+}
+
 .profile-upper-box {
   	width: 100%; 
-  	height: 240px;
+  	height: 405px;
     background: url(../images/WorkDesk.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -187,7 +218,6 @@ iframe {
 	width: 20%;
 	padding-top: 40px;
 	padding-left: 40px;
-	box-sizing: border-box;
 }
 
 .profile-top-right {
@@ -198,15 +228,14 @@ iframe {
 	padding-right: 60px;
 	padding-top: 40px;
 	line-height: 1.4;
-	box-sizing: border-box;
 	clear: none;
 }
 
 .profile-middle-section {
-	height: 600px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	background-color: #ebebe0;
+	display: inline-block;
 }
 
 .achievements-text {
@@ -223,7 +252,6 @@ iframe {
 	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 40px;
-	box-sizing: border-box;
 }
 
 .profile-middle-section-middle {
@@ -231,7 +259,6 @@ iframe {
 	display:inline-block;
 	width: 40%;
 	padding-top: 40px;
-	box-sizing: border-box;
 }
 
 .profile-middle-section-left-top {
@@ -241,7 +268,7 @@ iframe {
 
 .profile-middle-section-left-bottom {
 	height: 30%;
-	padding-top: 20px;
+	padding-top: 240px;
 	clear: both;
 }
 
@@ -256,7 +283,6 @@ iframe {
 }
 
 .profile-middle-section-right {
-	height: 80%;
 	width: 30%;
 	background-color: white;
 	float:right;
@@ -269,18 +295,17 @@ iframe {
 	padding-right: 40px;
 	padding-top: 30px;
 	border: solid 2px lightgrey;
-	box-sizing: border-box;
 }
 
 .profile-bottom-section {
-	height: 1000px;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
+	display: inline-block;
+	padding-bottom: 50px;
 }
 
 .profile-bottom-section-left {
-	height: 80%;
 	width: 20%;
 	float: left;
 	font-family: 'Josefin Sans', sans-serif;
@@ -290,10 +315,9 @@ iframe {
 }
 
 .profile-bottom-section-right {
-	float:right;
+	float:left;
 	width:70%;
 	padding-top: 40px;
-	height: 80%;
 	padding-right: 60px;
 }
 
@@ -315,6 +339,8 @@ iframe {
 	background-image: url(../images/drums.jpg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center top;
+    background-color:grey;
 	background-size: contain;
 	width: 100%;
 	height: 400px;
@@ -330,7 +356,7 @@ iframe {
 
 .pers-header-left {
 	width: 50%;
-	height: 150px;
+	height: 250px;
 	float: left;
 	display: inline-block;
 	text-align: center;
@@ -340,16 +366,18 @@ iframe {
 
 .pers-header-right {
 	width: 50%;
-	height: 150px;
+	height: 250px;
 	float: right;
 	display: inline-block;
 	background: linear-gradient(to right bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 50%);
 }
 
-.profile-header-right { 
-	width: 50%;
-	height: 150px;
-	float: left;
+.pers-title-text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 35px;
+	padding-bottom: 15px;
+	padding-top: 40px;
+	text-align: center;
 }
 
 .pers-section-about {
@@ -363,12 +391,27 @@ iframe {
 	float: left;
 	padding-bottom: 40px;
 	padding:40px;
-	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .pers-upper-left img {
-	padding-bottom: 40px;
+	padding-top: 80px;
 } 
+
+.divider-line-top {
+	border-bottom: solid 3px red;
+	padding-bottom: 50px;
+	margin-top: 40px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.divider-line-bottom {
+	border-bottom: solid 3px red;
+	margin-left: 20%;
+	margin-right: 20%;
+}
 
 .pers-middle-photo {
 	background-image: url(../images/China2017.jpg);
@@ -380,29 +423,71 @@ iframe {
     background-attachment: fixed;
 	background-size: 2000px 1000px;
 	background-position: bottom;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .pers-upper-right {
 	width: 50%;
 	float: right;
-	display: inline-block;
-	padding:40px;
-	box-sizing: border-box;
+	display: block;
+	padding: 40px;
 	text-align: justify;
 }
 
+.fun-facts-section {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.ff-box {
+	width: 20%;
+	height: auto;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: inline-block;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+    position: relative;
+}
+
+#ff1, #ff2, #ff3, #ff4, #ff5, #ff6 {
+	height: 100%;
+	width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/*#ff1p, #ff2p, #ff3p, #ff4p, #ff5p, #ff6p {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	font-size: 25px;
+	position: absolute;
+    top: 30%;
+    right: 6em;
+    width: 33%;
+}*/
+
+.flipped {
+	transform: rotateX(360deg);
+	transition: 1s;
+}
+
 .pers-section-bottom {
-	height: 500px;
 	width: 100%;
 	clear: both;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .pers-bottom-left {
 	width: 50%;
 	float: left;
 	padding:40px;
-	box-sizing: border-box;
 	text-align: justify;
 }
 
@@ -411,19 +496,12 @@ iframe {
 	width: 50%;
 	/* padding-top: 200px; */
 	padding: 40px;
-	box-sizing: border-box;
 }
 
 .pers-bottom-right img {
 	padding-bottom: 40px;
 	padding-top: 40px;
 } 
-
-.pers-title-text {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 25px;
-	padding-bottom: 15px;
-}
 
 .pers-body-text {
 	font-family: 'Josefin Sans', sans-serif;
@@ -433,7 +511,7 @@ iframe {
 }
 
 .pers-bottom-photo {
-	background-image: url(../images/Hawaiiblackrock.jpg);
+	background-image: url(../images/Hawaiiblackrock1.png);
 	height: 350px;
 	width: 100%;
 	clear: both;
@@ -465,26 +543,38 @@ iframe {
 	text-align: center;
 }
 
-.resume-button {
+#resume-button {
 	width: 200px;
-	height: 45px;
+	height: 80px;
 	border: solid 3px rgba(128,128,128,0.8);
 	margin: auto;
 	margin-top: 50px;
+	padding-top: 30px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
-	color: black;
+	color: grey;
 	display: block;
 	font-size: 20px;
 	text-decoration: none;
-	padding-top: 30px;
+	transition: all ease 0.8s;
+}
+
+#resume-button:hover {
+    box-shadow: inset 0 0 0 3px #3a7999;
+    color: black;
+    background-color: #8CB0FF;
 }
 
 /* CONTACT */
 
 .contact-banner {
-	height: 100%;
+	background-image: url(../images/New-Zealand-Mt-Cook-250.jpg);
+	height: 400px;
 	width: 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+	background-size: contain;
 }
 
 .contact-body {
@@ -511,7 +601,6 @@ iframe {
 	height: 450px;
 	margin: auto;
 	margin-top: 60px;
-	box-sizing: border-box;
 }
 
 .contact-grid-upper-left {
@@ -519,7 +608,6 @@ iframe {
 	width: 50%;
 	float: left;
 	padding: 25px;
-	box-sizing: border-box;
 }
 
 .contact-grid-lower-left {
@@ -527,7 +615,6 @@ iframe {
 	width: 50%;
 	float: left;
 	padding: 25px;
-	box-sizing: border-box;
 }
 
 .contact-grid-upper-right {
@@ -535,7 +622,7 @@ iframe {
 	width: 50%;
 	float: left;
 	padding: 25px;
-	box-sizing: border-box;
+
 }
 
 .contact-grid-lower-right {
@@ -543,7 +630,7 @@ iframe {
 	width: 50%;
 	float: left;
 	padding: 25px;
-	box-sizing: border-box;
+
 }
 
 .footer-text {

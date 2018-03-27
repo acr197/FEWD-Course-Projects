@@ -2,9 +2,12 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<!-- GOOGLE FONTS HERE -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
-	<title>Andrew Ryan's Profile 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="author" content="Andrew Ryan">
+    <meta name="description" content="View and Download Andrew Ryan's Resume">
+	<title>Andrew Ryan's Resume</title>
 </head>
 <body>
 	<header>
@@ -14,25 +17,24 @@
 		<nav>
 			<a class="nav-text" href="profile.html">Profile</a>
 			<a class="nav-text" href="about.html">About</a>
-			<a class="nav-text" href="resume.html">Resume</a>
+			<a class="nav-text-current" href="resume.html">Resume</a>
 			<a class="nav-text" href="contact.html">Contact</a>
 		</nav>
 	</header>
-	
 <section>
 	<div class="resume-box"> RESUME 
-		<a href='images/oldresume.pdf' class='resume-button'>DOWNLOAD</a>
+		<a href='images/oldresume.pdf' id='resume-button'>DOWNLOAD</a>
 		<div class="pdf-contain">
 			<embed src="images/oldresume.pdf" width="80%" height="950px" type='application/pdf'>
 		</div>
-</div>
+	</div>
 </section>
 	<footer>
 		<div class="footer-text">
 		Copyright 2018.
 		</div>
 	</footer>
-
+<script src="js/index.js"></script>
 </body>
 </html>
 
