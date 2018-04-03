@@ -2,11 +2,13 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
 }
 
 header {
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	background-color: black;
 	bottom-border: solid 5px yellow;
 	overflow: hidden;
@@ -16,7 +18,7 @@ nav {
   	width: 70%;
   	float: right;
   	padding-right: 40px;
-  	padding-top: 22px;
+  	/*padding-top: 22px;*/
   	text-align: right;
 }
 
@@ -39,14 +41,18 @@ footer {
 	background-color: black;
 	clear: both;
 	color: white;
-
 }
 
 iframe {
-	float: left;
-	padding: 20px;
-	margin-bottom: 80px;
+	text-align: center;
+	margin-top: 100px;
+	position: relative;
+	width: 75%;
+	height: 850px;
+}
 
+html body {
+	margin:0; padding:0; width:100%; height:100%;
 }
 
 .clearfix::after {
@@ -57,27 +63,61 @@ iframe {
 	clear: both;
 }
 
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 20%;
+    vertical-align: middle;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .nav-text {
 	color: white;
     text-decoration: none;
-    padding: 25px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
     font-size: 25px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 	transition: all ease 0.8s;
+	display: inline-block;
 }
 
 .nav-text-current {
 	color: black;
     text-decoration: none;
-    padding: 25px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
     font-size: 25px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 	background-color: white;
+	display: inline-block;
+	pointer-events: none;
+    cursor: default;
 }
 
+#wrapper { width:100%; height:100%; background-color:#CCC; display:none;position: absolute;}
+
+#animation { width:100%; height:100%; background-color:#222; position: absolute;}
+
 .nav-text:hover {
+    box-shadow: inset 200px 0 0 0 grey;
+    color: #fff;
+}
+
+.nav-text-current:hover {
     box-shadow: inset 200px 0 0 0 grey;
     color: #fff;
 }
@@ -223,12 +263,12 @@ iframe {
 .profile-top-right {
 	float: right;
 	width: 80%;
-	height: 80%;
 	font-size: 19px;
 	padding-right: 60px;
 	padding-top: 40px;
 	line-height: 1.4;
 	clear: none;
+	overflow: visible;
 }
 
 .profile-middle-section {
@@ -240,7 +280,6 @@ iframe {
 
 .achievements-text {
 	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
 	font-style: underline;
 }
 
@@ -248,7 +287,6 @@ iframe {
 	height: 80%;
 	width: 20%;
 	float:left;
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 40px;
@@ -385,12 +423,16 @@ iframe {
 	clear: both;
 }
 
+iframe.map {
+	height: 400px;
+}
+
 .pers-upper-left  {
     position: relative;
     width: 50%;
 	float: left;
 	padding-bottom: 40px;
-	padding:40px;
+	padding-top: 80px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -430,9 +472,18 @@ iframe {
 .pers-upper-right {
 	width: 50%;
 	float: right;
-	display: block;
+	/*display: block;*/
 	padding: 40px;
 	text-align: justify;
+}
+
+.pers-upper-right p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 15px;
+  padding-right: 8px;
+  font-weight: 600;
 }
 
 .fun-facts-section {
@@ -531,16 +582,15 @@ iframe {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 40px;
 	padding-top: 65px;
-	height: 1010px;
+	height: 1310px;
 	text-align: center;
 }
 
 .pdf-contain {
-	height: 600px;
-	width: 100%;
+	width: 70%;
 	margin-top: 70px;
-	position: absolute;	
-	text-align: center;
+	/*position: absolute;	*/
+	margin: auto;
 }
 
 #resume-button {
@@ -549,6 +599,7 @@ iframe {
 	border: solid 3px rgba(128,128,128,0.8);
 	margin: auto;
 	margin-top: 50px;
+	margin-bottom: 15px;
 	padding-top: 30px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
@@ -556,6 +607,34 @@ iframe {
 	display: block;
 	font-size: 20px;
 	text-decoration: none;
+	cursor: pointer;
+	transition: all ease 0.8s;
+}
+
+.resume-dropdown-box {
+	width: 200px;
+	height: 80px;
+	border: solid 3px rgb(128,128,128);
+	padding-top: 30px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: grey;
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	transition: all ease 0.8s;
+}
+
+.resume-dropdown-box a {
+	text-decoration: none;
+	color: black;
+	opacity: .7;
+	background-color: #c0c6c4;
+	padding-left: 79px;
+	padding-right: 79px;
+	padding-bottom: 25px;
+	padding-top: 30px;
 	transition: all ease 0.8s;
 }
 
@@ -563,6 +642,12 @@ iframe {
     box-shadow: inset 0 0 0 3px #3a7999;
     color: black;
     background-color: #8CB0FF;
+}
+
+.resume-dropdown-box:hover {
+  	background-color: white;
+  	opacity: .75;
+    box-shadow: inset 0 0 0 3px #7f7f7f;
 }
 
 /* CONTACT */
@@ -597,44 +682,189 @@ iframe {
 }
 
 .contact-grid {
-	width: 450px;
-	height: 450px;
+	width: 500px;
 	margin: auto;
 	margin-top: 60px;
 }
 
 .contact-grid-upper-left {
 	height: 50%;
-	width: 50%;
+	width: 40%;
 	float: left;
-	padding: 25px;
+	margin: 25px;
+	cursor: pointer;
+	display: inline-block;
 }
 
 .contact-grid-lower-left {
 	height: 50%;
-	width: 50%;
+	width: 40%;
 	float: left;
-	padding: 25px;
+	margin: 25px;
+	cursor: pointer;
+	display: inline-block;
 }
 
 .contact-grid-upper-right {
 	height: 50%;
-	width: 50%;
+	width: 40%;
 	float: left;
-	padding: 25px;
-
+	margin: 25px;
+	cursor: pointer;
+	display: inline-block;
 }
 
 .contact-grid-lower-right {
 	height: 50%;
-	width: 50%;
+	width: 40%;
 	float: left;
-	padding: 25px;
-
+	margin: 25px;
+	cursor: pointer;
+	display: inline-block;
 }
 
 .footer-text {
 	padding-top: 22px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+.address-grid-takeover {
+	width: 20%;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #002C8B;
+	border: solid 3px #002C8B;
+	padding: 3px;
+	font-size: 30px;
+	margin: 70px auto;
+}
+
+.email-grid-takeover {
+	width: 20%;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #002C8B;
+	border: solid 3px #002C8B;
+	padding: 3px;
+	font-size: 30px;
+	margin: 70px auto;
+}
+
+.phone-grid-takeover {
+	width: 20%;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #002C8B;
+	border: solid 3px #002C8B;
+	padding: 3px;
+	font-size: 30px;
+	margin: 70px auto;
+}
+
+.form-grid-takeover {
+	width: 20%;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #002C8B;
+	border: solid 3px #002C8B;
+	padding: 3px;
+	font-size: 30px;
+	margin: 70px auto;
+}
+
+.contact-filler {
+	height: 300px;
+	width: 100%;
+}
+
+
+
+/*from hamburger notes */
+
+header nav {
+  position: relative;
+  z-index: 100;
+  line-height: 80px;
+}
+
+@media only screen and (max-width:580px){
+  header nav {
+    position: fixed;
+    top:0;
+    left:100%;
+    background-color:black;
+    width:100%;
+    height:100%;
+    padding:20px 0px;
+    text-align: right;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav ul li {
+  display: block;
+  height: 30px;
+  margin-left: 20px;
+}
+
+header nav .close-nav {
+  position: absolute;
+  top:30px;
+  right:30px;
+  z-index: 90;
+  cursor: pointer;
+  display: block;
+  color:yellow;
+}
+
+@media only screen and (max-width:580px){
+  header{
+    height: 60px;
+  }
+}
+
+header nav .close-nav span {
+  display: block;
+  width: 20px;
+  height:3px;
+  background-color: yellow;
+  transform: rotate(45deg) translate(2px);
+  -webkit-transform: rotate(45deg) translate(2px);
+  -moz-transform: rotate(45deg) translate(2px);
+}
+
+header nav .close-nav span.right {
+  transform: rotate(-45deg) translate(2px);
+  -webkit-transform: rotate(-45deg) translate(2px);
+  -moz-transform: rotate(-45deg) translate(2px);
+
+}
+
+.hamburger {
+  position: fixed;
+  top:25px;
+  right:25px;
+  z-index: 90;
+  display: none;
+  background-color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:580px){
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger span {
+  display: block;
+  width: 15px;
+  height:3px;
+  background-color: #000;
+  margin:2px 0;
 }

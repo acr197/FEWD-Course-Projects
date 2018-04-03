@@ -2,56 +2,68 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-   	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
-   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta name="author" content="Andrew Ryan">
-    <meta name="description" content="Andrew Ryan's Contact page">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew Ryan">
+	<meta name="description" content="Andrew Ryan's Contact page">
 	<title>Andrew Ryan - Contact</title>
 </head>
+<div id='animation-contact'></div>
 <body>
 	<header>
 		<a href="index.html">
 			<h1>Andrew Ryan</h1>
-		</a>			
+		</a>
+		<div class="hamburger">
+			<span></span><span></span>
+		</div>		
 		<nav>
-			<a class="nav-text" href="profile.html">Profile</a>
-			<a class="nav-text" href="about.html">About</a>
-			<a class="nav-text" href="resume.html">Resume</a>
-			<a class="nav-text-current" href="contact.html">Contact</a>
+			<a class="nav-text" href="profile.html">Profile</a> 
+			<a class="nav-text" href="about.html">About</a> 
+			<a class="nav-text" href="resume.html">Resume</a> 
+			<a class="nav-text-current" href="">Contact</a> 
 		</nav>
+		<div class="close-nav">
+			<span class="left"></span><span class="right"></span>
+		</div>
 	</header>
-
-<section class="contact-banner">
-	
-</section>
-
-<section class="contact-body">
-	<div class="contact-text">
-	Contact
-	</div>
-	<div class="contact-border"> </div>
-	<div class="contact-grid">
-		<div class="contact-grid-upper-left">
-			<img src="images/contact-address.png"  width="100%" height="100%">
+	<section class="contact-banner">
+	</section>
+	<section class="contact-body">
+		<div class="contact-text">
+			Contact
 		</div>
-		<div class="contact-grid-lower-left">
-			<img src="images/contact-email.png"  width="100%" height="100%">
+		<div class="contact-border"> </div>
+		<div class="contact-grid">
+			<div class="contact-grid-upper-left">
+				<img src="images/contact-address.png"  width="100%" height="100%">
+			</div>
+			<a href="mailto:acr197@gmail.com"><div class="contact-grid-lower-left">
+				<img src="images/contact-email.png"  width="100%" height="100%">
+			</div></a>
+			<div class="contact-grid-upper-right">
+				<img src="images/contact-gps.png"  width="100%" height="100%">
+			</div>
+			<div class="contact-grid-lower-right">
+				<img src="images/contact-phone.png"  width="100%" height="100%">
+			</div>
 		</div>
-		<div class="contact-grid-upper-right">
-			<img src="images/contact-gps.png"  width="100%" height="100%">
-		</div>
-		<div class="contact-grid-lower-right">
-			<img src="images/contact-phone.png"  width="100%" height="100%">
-		</div>
-	</div>
-</section>
+			<div class="address-grid-takeover" style="display: none">
+			</div>
+			<div class="email-grid-takeover" style="display: none">488 9th Ave<br>Apt 2<br>New York, NY 10018</div>
+			<div class="form-grid-takeover" style="display: none">6108045458
+			</div>
+			<div class="phone-grid-takeover" style="display: none">
+			</div>
+	</section>
+	<div class="contact-filler"></div>
 
 	<footer>
 		<div class="footer-text">
-		Copyright 2018.
+			Copyright 2018.
 		</div>
 	</footer>
-<script src="js/index.js"></script>
-	</body>
-	</html>
+	<script src="js/index.js"></script>
+</body>
+</html>

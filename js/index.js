@@ -100,3 +100,104 @@ $(document).ready(function(){
         $("#lower-right-hover").removeClass('transition');
     });
 }); 
+
+//BURGURZ PLZ
+
+$('.hamburger').on('click', function() {
+	$('nav').animate({'left': '40%'});
+	$('.nav-text').css({'color': 'white', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
+	$('.nav-text-current').css({'color': 'black', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
+	$('.close-nav').css('display', 'block');
+});
+
+$('.close-nav').on('click', function() {
+	$('.nav').animate({'left': '100%'});
+	$('.hamburger').css('display', 'block');
+});
+
+$(window).on("resize", function(){ 
+	$('header').removeAttr('style');
+});
+
+//FLUID WIDTH
+$('p').each(function(){
+    var string = $(this).html();
+    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+    $(this).html(string);
+  });
+
+//RESUME DROPDOWN
+
+$('.resume-hover').hide();
+
+$("#resume-button").mouseover(function () {
+    $(".resume-hover").slideDown('slow');
+});
+
+$("#resume-ul-hover, #resume-ul-hover").mouseleave(function () {
+    $(".resume-hover").slideUp('slow');
+});
+
+//CONTACT PAGE
+
+$(".contact-grid-upper-left").click(function(){
+    $('.contact-grid').fadeOut(1000, function(){
+    	$('.address-grid-takeover').fadeIn(1000); {
+    		$('.address-grid-takeover').click(function(){
+    			$('.address-grid-takeover').fadeOut(1000, function() {
+    				$('.contact-grid').fadeIn(1000);
+				});
+			}); 
+    	}
+    });
+});
+
+$(".contact-grid-upper-right").click(function(){
+    $('.contact-grid').fadeOut(1000, function(){
+    	$('.email-grid-takeover').fadeIn(1000);{
+        	$('.email-grid-takeover').click(function(){
+    			$('.email-grid-takeover').fadeOut(1000, function() {
+    				$('.contact-grid').fadeIn(1000);
+				});
+			}); 
+    	}
+	});
+});
+
+// $(".contact-grid-lower-left").click(function(){
+//     $('.contact-grid').fadeOut(1000, function(){
+//     	$('.phone-grid-takeover').fadeIn(1000);{
+//         	$('.phone-grid-takeover').click(function(){
+//     			$('.phone-grid-takeover').fadeOut(1000, function() {
+//     				$('.contact-grid').fadeIn(1000);
+// 				});
+// 			}); 
+//     	}
+// 	});
+// });
+
+$(".contact-grid-lower-right").click(function(){
+    $('.contact-grid').fadeOut(1000, function(){
+   		$('.form-grid-takeover').fadeIn(1000);{
+           	$('.form-grid-takeover').click(function(){
+    			$('.form-grid-takeover').fadeOut(1000, function() {
+    				$('.contact-grid').fadeIn(1000);
+				});
+			}); 
+    	}
+	});
+});
+
+//HOME LOAD ANIMATION
+
+$(function() {
+    $('#animation-home').animate({'height':'0','opacity':'0',}, 1500);
+    $(document).ready(function() {
+    	$('.loader').hide(4000);
+    	});
+});
+
+// $(function() {
+//     $('#animation-contact').animate({'height':'0','opacity':'0',}, 1500);
+//     $(document).ready(function()
+// });
