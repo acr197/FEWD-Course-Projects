@@ -53,35 +53,34 @@
 		<div class="address-grid-takeover" style="display: none"> -->
 		</div> 
 		<div class="form-grid-takeover" style="display: none">
-			<form action='formfill.php' method="post">
+			<div id='form-close'>&#10006;</div>
+			<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form-success">
 
-				<input type='text' name='firstname' id='firstname-form' placeholder="First Name" required/>
+				<input type='text' name='firstname' id='firstname-form' placeholder="First Name" class="field" required/>
 				<label for='firstname'></label> 
-				<input type='text' name='lastname' id='lastname-form' placeholder="Last Name"/>
+				<input type='text' name='lastname' id='lastname-form' placeholder="Last Name" class="field"/>
 				<label for='lastname'></label> 
-				<input type='email' name="email" id='email-form' placeholder="Email" required/>
+				<input type='email' name="email" id='email-form' placeholder="Email" class="field" required/>
 				<label for='email'></label> 
-				<input type='text' name='subject' id='subject-form' placeholder='Subject' required/>
+				<input type='text' name='subject' id='subject-form' placeholder='Subject' class="field" required/>
 				<label for='Subject'></label> <br>
-				<input type='Message' name='message' id='message-form' placeholder='Say Hi!' required/>
+				<input type='Message' name='message' id='message-form' placeholder='Say Hi!' class="field" required/>
 				<label for='message'></label> <br>
 
-				<input type='submit' name='submit' value='submit' id='form-submit-button' />
-
+				<input type='submit' name='submit' value='submit' class="field" id='form-submit-button' />
 			</div>
-
-			<div class="email-grid-takeover" style="display: none">
-				
+			<div class="email-grid-takeover" style="display: none">	
 			</div>
 			<div class="phone-grid-takeover" style="display: none">
 			</div>
+		</form>
+		<iframe name="form-success" width="0" height="0" style="display:none"></iframe>
+	</div>
 		</section>
-
 		<div class="contact-filler"></div>
-
 		<footer>
 			<div class="footer-text">
-				Copyright 2018.
+				&copy; Andrew Ryan 2018
 			</div>
 		</footer>
 		<script src="js/index.js"></script>

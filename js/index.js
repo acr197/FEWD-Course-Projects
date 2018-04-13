@@ -114,12 +114,10 @@ $('.hamburger').on('click', function() {
 		$('.nav-text').css({'color': 'white', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
 		$('.nav-text-current').css({'color': 'black', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
 		menuOpen = true;
-
 	}
 	else {
 		$('nav').animate({'left': '100%'});
 		menuOpen = false;
-
 	}
 });
 
@@ -183,51 +181,55 @@ $(".contact-grid-upper-right").click(function(){
 
 $(".contact-grid-upper-left").click(function(){
     $('.contact-grid').fadeOut(1000, function(){
-   		$('.form-grid-takeover').fadeIn(1000);{
-           	$('.form-grid-takeover').click(function(){
-    			$('.form-grid-takeover').fadeOut(1000, function() {
-    				$('.contact-grid').fadeIn(1000);
-				});
-			}); 
-    	}
+   		$('.form-grid-takeover').fadeIn(1000);
 	});
 });
+$('.form-grid-takeover').click(function(event){
+	console.log(event.target,$(event.target),$(event.target).hasClass("field"));
+	if ($(event.target).hasClass("field") === false) {
+		$('.form-grid-takeover').fadeOut(1000, function() {
+			$('.contact-grid').fadeIn(1000);
+			$('.form-grid-takeover').removeClass("open")
+		});
+	}
+    			
+}); 
 
 //PAGE LOAD ANIMATION//
 //Home
 $(document).ready(function() {
-	$('.loader').fadeOut(3000); 
-	$('.load').fadeIn(3000);
+	$('.loader').fadeOut(2000); 
+	$('.load').fadeIn(2000);
 });
 //Professional Profile
 $(document).ready(function() {
-	$('.lds-circle').fadeOut(3000); 
-	$('.load').fadeIn(3000);
+	$('.lds-circle').fadeOut(2000); 
+	$('.load').fadeIn(2000);
 });
 //About Me
 $(document).ready(function() {
-	$('.lds-ripple').fadeOut(3000); 
-	$('.load').fadeIn(3000);
+	$('.lds-ripple').fadeOut(2000); 
+	$('.load').fadeIn(2000);
 });
 //Resume
 $(document).ready(function(){
-	$('.lds-ellipsis').fadeOut(3000); 
-	$('.load').fadeIn(3000);
+	$('.lds-ellipsis').fadeOut(2000); 
+	$('.load').fadeIn(2000);
 });
 //Contact
 $(document).ready(function() {
-	$('.lds-hourglass').fadeOut(3000); 
-	$('.load').fadeIn(3000);
+	$('.lds-hourglass').delay(5000).fadeOut(2000); 
+	$('.load').fadeIn(2000);
 });
 
 // ABOUT TOP IMAGE HOVER //
 
-$('#camelimage').mouseover(function() {
-	$('#camelimage').attr('src', 'images/CairoCamel2.jpg');
-});
-$("#camelimage").mouseleave(function () {
-    $("#camelimage").attr('src', 'images/CairoCamel.jpg');
-});
+// $('#camelimage').mouseover(function() {
+// 	$('#camelimage').attr('src', 'images/CairoCamel2.jpg');
+// });
+// $("#camelimage").mouseleave(function () {
+//     $("#camelimage").attr('src', 'images/CairoCamel.jpg');
+// });
 
 //FORM SUBMIT BUTTON//
 $('#form-submit-button').on('click', function() {
@@ -240,3 +242,17 @@ $('#form-submit-button').on('click', function() {
 $('.pers-top-section').ready(function(){
 	$('.pers-top-section').css({'left':'0'});
 });
+
+
+
+
+
+
+// $(document).ready(function(){
+//         $(".pers-top-text").animate({
+            // 'margin-left': 'none'
+            // opacity: '0.5',
+            // height: '150px',
+            // width: '10px'
+    //     }, 5000);
+    // });

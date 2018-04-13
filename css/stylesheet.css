@@ -247,6 +247,7 @@ html body {
 	width: 20%;
 	padding-top: 40px;
 	padding-left: 40px;
+	padding-right: 15px;
 }
 
 .profile-top-right {
@@ -277,7 +278,6 @@ html body {
     padding-left: 0px;
     padding-top: 0px;
     height: auto;
-
   }
 }
 
@@ -308,18 +308,23 @@ html body {
 }
 
 @media only screen and (max-width:580px){
-li {
+li, .job-text, .job-subtext {
     display: block;
     float: none;
     width: auto;
     text-align: center;
-    /*border-bottom: solid 1px black;*/
   }
 }
 
-
-
-
+@media only screen and (max-width:580px){
+.mobile-border-small {
+	border-bottom: solid 1px darkred;
+	width: 3%;
+	margin:auto;
+	padding-top:20px;
+	margin-bottom: 00px;
+}
+}
 
 
 .profile-middle-section {
@@ -341,6 +346,7 @@ li {
 	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 40px;
+	padding-right: 15px;
 }
 
 .profile-middle-section-middle {
@@ -354,6 +360,7 @@ li {
 	height: 30%;
 	padding-top: 240px;
 	clear: both;
+	padding-right:15px;
 }
 
 .profile-middle-section-middle-top {
@@ -382,6 +389,80 @@ li {
 	border: solid 2px lightgrey;
 }
 
+.profile-middle-section-left-bottom-mobile {
+	display: none;
+}
+
+@media only screen and (max-width:580px){
+.profile-middle-section-left-bottom-mobile {
+	display: block;
+	padding-bottom: 20px;
+	text-decoration: underline;
+	}
+}
+
+@media only screen and (max-width:580px){
+div .profile-middle-section-left-bottom {
+	display: none;
+	}
+}
+
+@media only screen and (max-width:580px){
+   .profile-middle-section {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:580px){
+.profile-middle-section-left {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 0px;
+	padding-right: 0px;
+	text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width:580px){
+  .profile-middle-section-middle, .profile-middle-section-right, .profile-middle-section-left-top, .profile-middle-section-left-bottom {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width:580px){
+.profile-middle-section-right {
+    display: block;
+    float: none;
+    margin-left: 15%;
+    text-align: justify;
+    padding-top: 25px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width:580px){
+.profile-middle-section-right ul li 	 {
+    text-align: justify;
+    padding-top: 25px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width:580px){
+.achievements-text {
+	text-align: center;
+	margin-left: -15px;
+	}
+}
+
+
 .profile-bottom-section {
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
@@ -397,6 +478,7 @@ li {
 	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 40px;
+	padding-right: 15px;
 }
 
 .profile-bottom-section-right {
@@ -406,6 +488,37 @@ li {
 	padding-right: 30px;
 /*	clear: none;
 	overflow: visible;*/
+}
+
+@media only screen and (max-width:580px){
+  .profile-bottom-section {
+    height: auto;      
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width:580px){
+  div .profile-bottom-section-left {
+    display: block;
+    float: none;
+    width: 66%;
+    text-align: center;
+    padding-left: 0px;
+	padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width:580px){
+  .profile-bottom-section-right {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: center;     
+	padding-top: 0px;
+	padding-left: 0px;
+    padding-right: 0px;
+        width: 66%;
+  }
 }
 
 /* ------------------PERSONAL PROFILE---------------------------- */
@@ -430,9 +543,8 @@ li {
     background-color:grey;
 	background-size: contain;
 	width: 100%;
-	height: 100vh;
-	left: 100%;
-	transition: left 2s;
+	height: 90vh;
+	/*left: 100%;*/
 }
 
 .pers-top-text {
@@ -441,6 +553,10 @@ li {
    font-style: italic;
    font-weight: 300;
    padding-top: 55px;
+   /*margin-left: 100%;*/
+  /*display: inline;*/
+	/*position: absolute;*/
+   /*transition: left 3s;*/
 }
 
 .pers-header-left {
@@ -451,8 +567,11 @@ li {
 	text-align: center;
 	position: inherit;
 	background: linear-gradient(to left bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 10%);
-	height: 100vh;
+	height: 65vh;
+	transition: right 3s;
 }
+
+
 
 .pers-header-right {
 	width: 50%;
@@ -460,12 +579,14 @@ li {
 	float: right;
 	display: inline-block;
 	background: linear-gradient(to right bottom, rgba(0,0,0,0) 50%, rgba(33,37,49,0.5) 10%);
-	height: 100vh;
+	height: 65vh;
+	   transition: right 3s;
 }
 
 .pers-top-picture {
 	width: 100%;
 	height: 33%;
+	   transition: right 3s;
 }
 
 .pers-title-text {
@@ -690,6 +811,7 @@ iframe.map {
 	transition: all ease 0.8s;
 	cursor: pointer;
 	background-color: #c0c6c4;
+	border-radius: 10px;
 }
 
 .resume-dropdown-box a {
@@ -839,7 +961,9 @@ iframe.map {
 	border: solid 3px #002C8B;
 	padding: 3px;
 	font-size: 30px;
-	margin: 70px auto; 	
+	margin: 70px auto; 
+	background-color: black;	
+	border-radius: 15px;
 }
 
 #form-grid-takeover-animate {
@@ -902,9 +1026,48 @@ iframe.map {
 	opacity: .5;
 }
 
+#firstname-form, #lastname-form, #email-form, #subject-form, #message-form {
+	border: solid 2px grey;
+	background-color: white;
+	opacity: .9;
+	border-radius: 5px;
+	height: 35px;
+}
 
+::placeholder {
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	opacity: .6;
+}
 
+#form-submit-button {
+	width: 100px;
+	height: 40px;
+	border: solid 3px rgba(128,128,128,0.8);
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: grey;
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all ease 0.8s;
+	border-radius: 10px;
+}
 
+#form-close {
+	position: relative;
+    float: right;
+	color: white;
+    right: 10px;
+    cursor: pointer;
+	position: absolute;
+	padding-right: 15.5%;
+}
 
 /*------ HAMBURGER -----*/
 
@@ -959,8 +1122,7 @@ header nav .close-nav span {
   display: block; 
   width: 20px;
   height:3px;
-  background-color: yellow; color:yellow;
-    z-index: 90;
+  z-index: 90;
   transform: rotate(45deg) translate(2px);
   -webkit-transform: rotate(45deg) translate(2px);
   -moz-transform: rotate(45deg) translate(2px);
@@ -970,7 +1132,7 @@ header nav .close-nav span.right {
   transform: rotate(-45deg) translate(2px);
   -webkit-transform: rotate(-45deg) translate(2px);
   -moz-transform: rotate(-45deg) translate(2px);
-    z-index: 90;
+  z-index: 90;
 }
 
 .hamburger {
