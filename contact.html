@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Andrew Ryan">
 	<meta name="description" content="Andrew Ryan's Contact page">
@@ -30,32 +31,19 @@
 		</div>
 	</header>
 	<section class="contact-banner load">
-	</section>
-	<section  class="load">
-		<div class="contact-text">
-			Contact
+			<div class="contact-text">
+			CONTACT
 		</div>
-		<div class="contact-border"> </div>
-		<div class="contact-grid">
+				<div class="contact-grid">
 			<div class="contact-grid-upper-left">
-				<img src="images/contact-address.png"  width="100%" height="100%">
+				<img src="images/contact-address.png"  width="100%" height="100%" data-aos='fade-right' data-aos-duration="1500">
 			</div>
-			<a href="mailto:acr197@gmail.com"><div class="contact-grid-upper-right">
+			<a href="mailto:acr197@gmail.com"><div class="contact-grid-upper-right" data-aos='fade-left' data-aos-duration="1500">
 				<img src="images/contact-email.png"  width="100%" height="100%">
 			</div></a>
-<!-- 			<div class="contact-grid-upper-right">
-				<img src="images/contact-gps.png"  width="100%" height="100%">
-			</div>
-		<div class="contact-grid-lower-right">
-				<img src="images/contact-phone.png"  width="100%" height="100%">
-			</div>
-		</div> 
-		<div class="address-grid-takeover" style="display: none"> -->
-		</div> 
-		<div class="form-grid-takeover" style="display: none">
+					<div class="form-grid-takeover" style="display: none">
 			<div id='form-close'>&#10006;</div>
 			<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form-success">
-
 				<input type='text' name='firstname' id='firstname-form' placeholder="First Name" class="field" required/>
 				<label for='firstname'></label> 
 				<input type='text' name='lastname' id='lastname-form' placeholder="Last Name" class="field"/>
@@ -66,7 +54,6 @@
 				<label for='Subject'></label> <br>
 				<input type='Message' name='message' id='message-form' placeholder='Say Hi!' class="field" required/>
 				<label for='message'></label> <br>
-
 				<input type='submit' name='submit' value='submit' class="field" id='form-submit-button' />
 			</div>
 			<div class="email-grid-takeover" style="display: none">	
@@ -76,13 +63,56 @@
 		</form>
 		<iframe name="form-success" width="0" height="0" style="display:none"></iframe>
 	</div>
-		</section>
-		<div class="contact-filler"></div>
+	</section>
+<!-- 		<div class="contact-text">
+			Contact
+		</div>
+		<div class="contact-border"> </div> -->
+<!-- 		<div class="contact-grid">
+			<div class="contact-grid-upper-left">
+				<img src="images/contact-address.png"  width="100%" height="100%" data-aos='fade-right' data-aos-duration="1500">
+			</div>
+			<a href="mailto:acr197@gmail.com"><div class="contact-grid-upper-right" data-aos='fade-left' data-aos-duration="1500">
+				<img src="images/contact-email.png"  width="100%" height="100%">
+			</div></a> -->
+<!-- 			<div class="contact-grid-upper-right">
+				<img src="images/contact-gps.png"  width="100%" height="100%">
+			</div>
+		<div class="contact-grid-lower-right">
+				<img src="images/contact-phone.png"  width="100%" height="100%">
+			</div>
+		</div> 
+		<div class="address-grid-takeover" style="display: none"> -->
+		<!-- </div>  -->
+<!-- 		<div class="form-grid-takeover" style="display: none">
+			<div id='form-close'>&#10006;</div>
+			<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form-success">
+				<input type='text' name='firstname' id='firstname-form' placeholder="First Name" class="field" required/>
+				<label for='firstname'></label> 
+				<input type='text' name='lastname' id='lastname-form' placeholder="Last Name" class="field"/>
+				<label for='lastname'></label> 
+				<input type='email' name="email" id='email-form' placeholder="Email" class="field" required/>
+				<label for='email'></label> 
+				<input type='text' name='subject' id='subject-form' placeholder='Subject' class="field" required/>
+				<label for='Subject'></label> <br>
+				<input type='Message' name='message' id='message-form' placeholder='Say Hi!' class="field" required/>
+				<label for='message'></label> <br>
+				<input type='submit' name='submit' value='submit' class="field" id='form-submit-button' />
+			</div>
+			<div class="email-grid-takeover" style="display: none">	
+			</div>
+			<div class="phone-grid-takeover" style="display: none">
+			</div>
+		</form>
+		<iframe name="form-success" width="0" height="0" style="display:none"></iframe>
+	</div> -->
+		<!-- <div class="contact-filler"></div> -->
 		<footer>
 			<div class="footer-text">
 				&copy; Andrew Ryan 2018
 			</div>
 		</footer>
 		<script src="js/index.js"></script>
+			<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	</body>
 	</html>

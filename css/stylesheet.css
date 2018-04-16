@@ -8,7 +8,7 @@
 
 header {
 	width: 100%;
-	height: 70px;
+	height: 12vh;
 	background-color: black;
 	bottom-border: solid 5px yellow;
 	overflow: hidden;
@@ -19,8 +19,7 @@ nav {
   	float: right;
   	padding-right: 40px;
   	/*padding-top: 22px;*/
-  	text-align: right;
-}
+  	text-align: right;}
 
 
 h1 {
@@ -215,6 +214,7 @@ html body {
 .profile-header-text {
 	font-size: 30px;
 	line-height: 1.6;
+	padding-top: 10%;
 }
 
 .profile-header-right { 
@@ -225,20 +225,23 @@ html body {
 
 .profile-upper-box {
   	width: 100%; 
-  	height: 405px;
+  	height: 88vh;
     background: url(../images/WorkDesk.jpeg);
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-attachment: fixed;
-	background-size: contain;
+    background-position: center;
+    background-color:grey;
+	background-size: cover;
 	text-align: center;
-	padding-top: 150px;
+	/*padding-top: 150px;*/
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 50px;
+
 }
 
 .profile-top-section {
-	height: 525px;
+	margin-top: 10%;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
@@ -247,7 +250,6 @@ html body {
 .profile-top-left {
 	float: left;
 	width: 20%;
-	padding-top: 40px;
 	padding-left: 40px;
 	padding-right: 15px;
 }
@@ -257,7 +259,6 @@ html body {
 	width: 80%;
 	font-size: 19px;
 	padding-right: 60px;
-	padding-top: 40px;
 	line-height: 1.4;
 	clear: none;
 	overflow: visible;
@@ -457,13 +458,13 @@ div .profile-middle-section-left-bottom {
     padding-right: 15px;
   }
 }
+
 @media only screen and (max-width:580px){
 .achievements-text {
 	text-align: center;
 	margin-left: -15px;
 	}
 }
-
 
 .profile-bottom-section {
 	width: 100%;
@@ -543,9 +544,9 @@ div .profile-middle-section-left-bottom {
     background-attachment: fixed;
     background-position: center;
     background-color:grey;
-	background-size: contain;
+	background-size: cover;
 	width: 100%;
-	height: 95vh;
+	height: 88vh;
 }
 
 .pers-top-text {
@@ -855,12 +856,14 @@ iframe.map {
 
 .contact-banner {
 	background-image: url(../images/New-Zealand-Mt-Cook-250.jpg);
-	height: 400px;
+	height: 88vh;
 	width: 100%;
+	position: relative;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center top;
-	background-size: contain;
+    background-position: center;
+    background-color:grey;
+	background-size: cover;
 }
 
 .contact-body {
@@ -871,10 +874,10 @@ iframe.map {
 
 .contact-text {
 	text-align: center;
-	font-size: 40px;
-	margin-bottom: 60px;
-	padding-top: 60px;
+	padding-top: 120px;
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	color: white;
 }
 
 .contact-border {
@@ -976,6 +979,7 @@ iframe.map {
 	margin: 70px auto; 
 	background-color: black;	
 	border-radius: 15px;
+	position: absolute;
 }
 
 #form-grid-takeover-animate {
