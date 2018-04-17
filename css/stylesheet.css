@@ -8,7 +8,7 @@
 
 header {
 	width: 100%;
-	height: 12vh;
+	/*height: 12vh;*/
 	background-color: black;
 	bottom-border: solid 5px yellow;
 	overflow: hidden;
@@ -225,7 +225,7 @@ html body {
 
 .profile-upper-box {
   	width: 100%; 
-  	height: 88vh;
+  	height: 91vh;
     background: url(../images/WorkDesk.jpeg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -237,11 +237,10 @@ html body {
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 50px;
-
 }
 
 .profile-top-section {
-	margin-top: 10%;
+	margin-top: 2%;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
@@ -264,7 +263,7 @@ html body {
 	overflow: visible;
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-header-text {
     text-align: center;
     padding-left: 0px;
@@ -275,7 +274,7 @@ html body {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-upper-box {
     text-align: center;
     padding-left: 0px;
@@ -284,13 +283,13 @@ html body {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-top-section {
     height: auto;
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-top-left {
     display: block;
     float: none;
@@ -300,7 +299,7 @@ html body {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-top-right {
     display: block;
     float: none;
@@ -310,7 +309,7 @@ html body {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 li, .job-text, .job-subtext {
     display: block;
     float: none;
@@ -319,7 +318,7 @@ li, .job-text, .job-subtext {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .mobile-border-small {
 	border-bottom: solid 1px darkred;
 	width: 3%;
@@ -327,6 +326,12 @@ li, .job-text, .job-subtext {
 	padding-top:20px;
 	margin-bottom: 00px;
 }
+}
+
+@media only screen and (max-width:800px){
+  .achievements-text {
+    text-align: center;
+  }
 }
 
 
@@ -396,7 +401,7 @@ li, .job-text, .job-subtext {
 	display: none;
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .profile-middle-section-left-bottom-mobile {
 	display: block;
 	padding-bottom: 20px;
@@ -404,19 +409,19 @@ li, .job-text, .job-subtext {
 	}
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 div .profile-middle-section-left-bottom {
 	display: none;
 	}
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
    .profile-middle-section {
     height: auto;
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .profile-middle-section-left {
     display: block;
     float: none;
@@ -429,7 +434,7 @@ div .profile-middle-section-left-bottom {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-middle-section-middle, .profile-middle-section-right, .profile-middle-section-left-top, .profile-middle-section-left-bottom {
     display: block;
     float: none;
@@ -440,7 +445,7 @@ div .profile-middle-section-left-bottom {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .profile-middle-section-right {
     display: block;
     float: none;
@@ -451,7 +456,7 @@ div .profile-middle-section-left-bottom {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .profile-middle-section-right ul li 	 {
     text-align: justify;
     padding-top: 25px;
@@ -459,10 +464,11 @@ div .profile-middle-section-left-bottom {
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
 .achievements-text {
 	text-align: center;
 	margin-left: -15px;
+	word-wrap: break-word;
 	}
 }
 
@@ -480,8 +486,9 @@ div .profile-middle-section-left-bottom {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	padding-top: 40px;
+	padding-bottom: 20px;
 	padding-left: 40px;
-	padding-right: 15px;
+	/*padding-right: 15px;*/
 }
 
 .profile-bottom-section-right {
@@ -493,25 +500,26 @@ div .profile-middle-section-left-bottom {
 	overflow: visible;*/
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-bottom-section {
     height: auto;      
     margin-left: 15%;
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   div .profile-bottom-section-left {
     display: block;
     float: none;
     width: 66%;
     text-align: center;
     padding-left: 0px;
+    padding-right: 0px;
 	padding-top: 40px;
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .profile-bottom-section-right {
     display: block;
     float: none;
@@ -546,7 +554,7 @@ div .profile-middle-section-left-bottom {
     background-color:grey;
 	background-size: cover;
 	width: 100%;
-	height: 88vh;
+	height: 91vh;
 }
 
 .pers-top-text {
@@ -606,7 +614,7 @@ iframe.map {
 	height: 350px;
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .load {
   	display: block;
   }
@@ -773,6 +781,17 @@ iframe.map {
 
 /* ---------------------------------RESUME----------------------------------- */
 
+.resume-section {
+	background-image: url(../images/notebook-background.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*background-color:grey;*/
+	background-size: cover;
+	width: 100%;
+	/*height: 91vh;*/
+}
+
 .resume-box {
 	padding-top: 40px;
 	padding-bottom: 50px;
@@ -781,6 +800,7 @@ iframe.map {
 	padding-top: 65px;
 	height: 1310px;
 	text-align: center;
+	color:white;
 }
 
 .pdf-contain {
@@ -793,17 +813,18 @@ iframe.map {
 #resume-button {
 	width: 200px;
 	height: 80px;
-	border: solid 3px rgba(128,128,128,0.8);
+	border: solid 3px rgba(128,128,128,0.2);
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 15px;
 	padding-top: 30px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
-	color: grey;
+	color: white;
 	display: block;
 	font-size: 20px;
 	text-decoration: none;
+	background-color: rgba(20,20,100,0.4);
 	cursor: pointer;
 	transition: all ease 0.8s;
 }
@@ -822,7 +843,7 @@ iframe.map {
 	text-decoration: none;
 	transition: all ease 0.8s;
 	cursor: pointer;
-	background-color: #c0c6c4;
+	background-color: rgba(192,198,196,.4);
 	border-radius: 10px;
 }
 
@@ -856,7 +877,7 @@ iframe.map {
 
 .contact-banner {
 	background-image: url(../images/New-Zealand-Mt-Cook-250.jpg);
-	height: 88vh;
+	height: 91vh;
 	width: 100%;
 	position: relative;
 	background-repeat: no-repeat;
@@ -901,15 +922,6 @@ iframe.map {
 	display: inline-block;
 }
 
-/*.contact-grid-lower-left {
-	height: 50%;
-	width: 40%;
-	float: left;
-	margin: 25px;
-	cursor: pointer;
-	display: inline-block;
-}*/
-
 .contact-grid-upper-right {
 	height: 50%;
 	width: 40%;
@@ -920,53 +932,11 @@ iframe.map {
 	padding-bottom: 50px;
 }
 
-/*.contact-grid-lower-right {
-	height: 50%;
-	width: 40%;
-	float: left;
-	margin: 25px;
-	cursor: pointer;
-	display: inline-block;
-}*/
-
 .footer-text {
 	padding-top: 22px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 }
-
-/*.address-grid-takeover {
-	width: 20%;
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #002C8B;
-	border: solid 3px #002C8B;
-	padding: 3px;
-	font-size: 30px;
-	margin: 70px auto;
-}*/
-
-/*.email-grid-takeover {
-	width: 20%;
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #002C8B;
-	border: solid 3px #002C8B;
-	padding: 3px;
-	font-size: 30px;
-	margin: 70px auto;
-}*/
-
-/*.phone-grid-takeover {
-	width: 20%;
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #002C8B;
-	border: solid 3px orange;
-	padding: 3px;
-	font-size: 30px;
-	margin: 70px auto;
-}*/
 
 .form-grid-takeover {
 	width: 70%;
@@ -1093,7 +1063,7 @@ header nav {
   line-height: 80px;
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   header nav {
     position: fixed;
     top:0;
@@ -1128,7 +1098,7 @@ header nav .close-nav {
   color:yellow;   background-color: yellow;
 }
 
-/*@media only screen and (max-width:580px){
+/*@media only screen and (max-width:800px){
   header{
     height: 60px;
   }
@@ -1161,13 +1131,13 @@ header nav .close-nav span.right {
   cursor: pointer; 
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   .hamburger {
     display: block;
   }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:800px){
   header {
     height: 0px;
   }

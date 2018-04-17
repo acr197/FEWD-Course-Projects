@@ -1,3 +1,102 @@
+//HOME PAGE HOVER EXPAND//
+
+$(document).ready(function(){
+    $('#upper-left-hover').hover(function() {
+        $("#upper-left-hover-image").addClass('transition-image');
+        $("#upper-left-hover-text").addClass('transition-text');
+    }, function() {
+        $("#upper-left-hover-image").removeClass('transition-image');
+        $("#upper-left-hover-text").removeClass('transition-text');
+    });
+}); 
+
+$(document).ready(function(){
+    $('.home-grid-upper-right').hover(function() {
+        $("#upper-right-hover-image").addClass('transition-image');
+        $("#upper-right-hover-text").addClass('transition-text');
+    }, function() {
+        $("#upper-right-hover-image").removeClass('transition-image');
+        $("#upper-right-hover-text").removeClass('transition-text');
+    });
+}); 
+
+$(document).ready(function(){
+    $('.home-grid-lower-left').hover(function() {
+        $("#lower-left-hover-image").addClass('transition-image');
+        $("#lower-left-hover-text").addClass('transition-text');    
+    }, function() {
+        $("#lower-left-hover-image").removeClass('transition-image');
+        $("#lower-left-hover-text").removeClass('transition-text');
+    });
+}); 
+
+$(document).ready(function(){
+    $('.home-grid-lower-right').hover(function() {
+        $("#lower-right-hover-image").addClass('transition-image');
+        $("#lower-right-hover-text").addClass('transition-text');
+    }, function() {
+        $("#lower-right-hover-image").removeClass('transition-image');
+        $("#lower-right-hover-text").removeClass('transition-text');
+    });
+}); 
+
+//BURGER
+var menuOpen = false;
+
+$('.hamburger').on('click', function() {
+	if (menuOpen === false) {
+		$('nav').animate({'left': '0'});
+		$('.nav-text').css({'color': 'white', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
+		$('.nav-text-current').css({'color': 'black', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
+		menuOpen = true;
+	}
+	else {
+		$('nav').animate({'left': '100%'});
+		menuOpen = false;
+	}
+});
+
+//PAGE LOAD ANIMATION//
+//Home
+$(document).ready(function() {
+	$('.loader').fadeOut(2000); 
+	$('.load').fadeIn(2000);
+});
+//Professional Profile
+$(document).ready(function() {
+	$('.lds-circle').fadeOut(2000); 
+	$('.load').fadeIn(2000);
+});
+//About Me
+$(document).ready(function() {
+	$('.lds-ripple').fadeOut(2000); 
+	$('.load').fadeIn(2000);
+});
+//Resume
+$(document).ready(function(){
+	$('.lds-ellipsis').fadeOut(2000); 
+	$('.load').fadeIn(2000);
+});
+//Contact
+$(document).ready(function() {
+	$('.lds-hourglass').fadeOut(2000); 
+	$('.load').fadeIn(2000);
+});
+
+//FADE OUT PAGES//
+$('.nav-text').click(function(e) {
+	e.preventDefault();
+	newLocation = this.href;
+	$('html').fadeOut('slow', newpage);
+});
+function newpage() {
+	window.location = newLocation;
+}
+	//fix for footer appearing briefly at top on page loads
+$(document).ready(function(){
+	$("footer").slideUp(300).delay(800);
+});
+
 //PERSONAL PROFILE FUN FACTS//
 
 var isItFlipped1 = true;
@@ -63,79 +162,6 @@ $("#ff6").on("click", function(){
 	}
 });
 
-//FADE OUT PAGES//
-$('.nav-text').click(function(e) {
-	e.preventDefault();
-	newLocation = this.href;
-	$('html').fadeOut('slow', newpage);
-});
-function newpage() {
-	window.location = newLocation;
-}
-	//Footer delay (prevent from appearing briefly on top during page load)
-$(document).ready(function(){
-	$("footer").slideUp(300).delay(800);
-	$("footer").css('display','inline-block');
-});
-
-//HOME PAGE HOVER EXPAND//
-
-$(document).ready(function(){
-    $('#upper-left-hover').hover(function() {
-        $("#upper-left-hover-image").addClass('transition-image');
-        $("#upper-left-hover-text").addClass('transition-text');
-    }, function() {
-        $("#upper-left-hover-image").removeClass('transition-image');
-        $("#upper-left-hover-text").removeClass('transition-text');
-    });
-}); 
-
-$(document).ready(function(){
-    $('.home-grid-upper-right').hover(function() {
-        $("#upper-right-hover-image").addClass('transition-image');
-        $("#upper-right-hover-text").addClass('transition-text');
-    }, function() {
-        $("#upper-right-hover-image").removeClass('transition-image');
-        $("#upper-right-hover-text").removeClass('transition-text');
-    });
-}); 
-
-$(document).ready(function(){
-    $('.home-grid-lower-left').hover(function() {
-        $("#lower-left-hover-image").addClass('transition-image');
-        $("#lower-left-hover-text").addClass('transition-text');    
-    }, function() {
-        $("#lower-left-hover-image").removeClass('transition-image');
-        $("#lower-left-hover-text").removeClass('transition-text');
-    });
-}); 
-
-$(document).ready(function(){
-    $('.home-grid-lower-right').hover(function() {
-        $("#lower-right-hover-image").addClass('transition-image');
-        $("#lower-right-hover-text").addClass('transition-text');
-    }, function() {
-        $("#lower-right-hover-image").removeClass('transition-image');
-        $("#lower-right-hover-text").removeClass('transition-text');
-    });
-}); 
-
-//BURGER
-var menuOpen = false;
-
-$('.hamburger').on('click', function() {
-	if (menuOpen === false) {
-		$('nav').animate({'left': '0'});
-		$('.nav-text').css({'color': 'white', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
-		$('.nav-text-current').css({'color': 'black', 'display': 'block', 'padding': '0px', 'box-shadow': 'inset 0 0 0 0'});
-		menuOpen = true;
-	}
-	else {
-		$('nav').animate({'left': '100%'});
-		menuOpen = false;
-	}
-});
-
 //FLUID WIDTH
 
 $('p').each(function(){
@@ -156,61 +182,26 @@ $("#resume-ul-hover").mouseleave(function () {
     $(".resume-hover").slideUp('slow');
 });
 
-//CONTACT PAGE
+//CONTACT PAGE FORM FADE
 
+$('.form-grid-takeover').hide();
 $(".contact-grid-upper-left").click(function(){
     $('.contact-grid').fadeOut(1000, function(){
    		$('.form-grid-takeover').fadeIn(1000);
 	});
 });
-$('.form-grid-takeover').click(function(event){
-	console.log(event.target,$(event.target),$(event.target).hasClass("field"));
-	if ($(event.target).hasClass("field") === false) {
-		$('.form-grid-takeover').fadeOut(1000, function() {
-			$('.contact-grid').fadeIn(1000);
-			$('.form-grid-takeover').removeClass("open")
-		});
-	}
+// $('.form-grid-takeover').click(function(event){
+// 	console.log(event.target,$(event.target),$(event.target).hasClass("field"));
+// 	if ($(event.target).hasClass("field") === false) {
+// 		$('.form-grid-takeover').fadeOut(1000, function() {
+// 			$('.contact-grid').fadeIn(1000);
+// 			$('.form-grid-takeover').removeClass("open")
+// 		});
+// 	}
     			
-}); 
+// }); 
 
-//PAGE LOAD ANIMATION//
-//Home
-$(document).ready(function() {
-	$('.loader').fadeOut(2000); 
-	$('.load').fadeIn(2000);
-});
-//Professional Profile
-$(document).ready(function() {
-	$('.lds-circle').fadeOut(2000); 
-	$('.load').fadeIn(2000);
-});
-//About Me
-$(document).ready(function() {
-	$('.lds-ripple').fadeOut(2000); 
-	$('.load').fadeIn(2000);
-});
-//Resume
-$(document).ready(function(){
-	$('.lds-ellipsis').fadeOut(2000); 
-	$('.load').fadeIn(2000);
-});
-//Contact
-$(document).ready(function() {
-	$('.lds-hourglass').fadeOut(2000); 
-	$('.load').fadeIn(2000);
-});
-
-// ABOUT TOP IMAGE HOVER //
-
-// $('#camelimage').mouseover(function() {
-// 	$('#camelimage').attr('src', 'images/CairoCamel2.jpg');
-// });
-// $("#camelimage").mouseleave(function () {
-//     $("#camelimage").attr('src', 'images/CairoCamel.jpg');
-// });
-
-//FORM SUBMIT BUTTON//
+//FORM SUBMIT BUTTON THANK YOU
 
 $('#form-submit-button').on('click', function() {
 	alert('Thank you for your message!');
@@ -223,9 +214,17 @@ $('.pers-top-section').ready(function(){
 	$('.pers-top-section').css({'left':'0'});
 });
 
-//SCROLL PAGE ANIMATE VIEWPORT
+//AOS ANIMATE VIEWPORT
 
 $(function() {
-  AOS.init({delay:600, duration:500});
+  AOS.init({delay:300, duration:500});
 });
 
+// ABOUT TOP IMAGE HOVER //
+
+// $('#camelimage').mouseover(function() {
+// 	$('#camelimage').attr('src', 'images/CairoCamel2.jpg');
+// });
+// $("#camelimage").mouseleave(function () {
+//     $("#camelimage").attr('src', 'images/CairoCamel.jpg');
+// });
