@@ -1,43 +1,43 @@
 //HOME PAGE HOVER EXPAND//
 
 $(document).ready(function(){
-    $('#upper-left-hover').hover(function() {
-        $("#upper-left-hover-image").addClass('transition-image');
-        $("#upper-left-hover-text").addClass('transition-text');
-    }, function() {
-        $("#upper-left-hover-image").removeClass('transition-image');
-        $("#upper-left-hover-text").removeClass('transition-text');
-    });
+	$('#upper-left-hover').hover(function() {
+		$("#upper-left-hover-image").addClass('transition-image');
+		$("#upper-left-hover-text").addClass('transition-text');
+	}, function() {
+		$("#upper-left-hover-image").removeClass('transition-image');
+		$("#upper-left-hover-text").removeClass('transition-text');
+	});
 }); 
 
 $(document).ready(function(){
-    $('.home-grid-upper-right').hover(function() {
-        $("#upper-right-hover-image").addClass('transition-image');
-        $("#upper-right-hover-text").addClass('transition-text');
-    }, function() {
-        $("#upper-right-hover-image").removeClass('transition-image');
-        $("#upper-right-hover-text").removeClass('transition-text');
-    });
+	$('.home-grid-upper-right').hover(function() {
+		$("#upper-right-hover-image").addClass('transition-image');
+		$("#upper-right-hover-text").addClass('transition-text');
+	}, function() {
+		$("#upper-right-hover-image").removeClass('transition-image');
+		$("#upper-right-hover-text").removeClass('transition-text');
+	});
 }); 
 
 $(document).ready(function(){
-    $('.home-grid-lower-left').hover(function() {
-        $("#lower-left-hover-image").addClass('transition-image');
-        $("#lower-left-hover-text").addClass('transition-text');    
-    }, function() {
-        $("#lower-left-hover-image").removeClass('transition-image');
-        $("#lower-left-hover-text").removeClass('transition-text');
-    });
+	$('.home-grid-lower-left').hover(function() {
+		$("#lower-left-hover-image").addClass('transition-image');
+		$("#lower-left-hover-text").addClass('transition-text');    
+	}, function() {
+		$("#lower-left-hover-image").removeClass('transition-image');
+		$("#lower-left-hover-text").removeClass('transition-text');
+	});
 }); 
 
 $(document).ready(function(){
-    $('.home-grid-lower-right').hover(function() {
-        $("#lower-right-hover-image").addClass('transition-image');
-        $("#lower-right-hover-text").addClass('transition-text');
-    }, function() {
-        $("#lower-right-hover-image").removeClass('transition-image');
-        $("#lower-right-hover-text").removeClass('transition-text');
-    });
+	$('.home-grid-lower-right').hover(function() {
+		$("#lower-right-hover-image").addClass('transition-image');
+		$("#lower-right-hover-text").addClass('transition-text');
+	}, function() {
+		$("#lower-right-hover-image").removeClass('transition-image');
+		$("#lower-right-hover-text").removeClass('transition-text');
+	});
 }); 
 
 //BURGER
@@ -93,9 +93,9 @@ function newpage() {
 	window.location = newLocation;
 }
 	//fix for footer appearing briefly at top on page loads
-$(document).ready(function(){
-	$("footer").slideUp(300).delay(800);
-});
+	$(document).ready(function(){
+		$("footer").slideUp(300).delay(800);
+	});
 
 //PERSONAL PROFILE FUN FACTS//
 
@@ -165,31 +165,42 @@ $("#ff6").on("click", function(){
 //FLUID WIDTH
 
 $('p').each(function(){
-    var string = $(this).html();
-    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
-    $(this).html(string);
-  });
+	var string = $(this).html();
+	string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+	$(this).html(string);
+});
 
 //RESUME DROPDOWN
 
 $('.resume-hover').hide();
 
 $("#resume-button").mouseover(function () {
-    $(".resume-hover").slideDown('slow');
+	$(".resume-hover").slideDown('slow');
 });
 
 $("#resume-ul-hover").mouseleave(function () {
-    $(".resume-hover").slideUp('slow');
+	$(".resume-hover").slideUp('slow');
 });
 
 //CONTACT PAGE FORM FADE
 
 $('.form-grid-takeover').hide();
+
 $(".contact-grid-upper-left").click(function(){
-    $('.contact-grid').fadeOut(1000, function(){
-   		$('.form-grid-takeover').fadeIn(1000);
+	$('.contact-grid').fadeOut(1000);
+	$('.contact-text').fadeOut(1000, function(){
+		$('.form-grid-takeover').fadeIn(1000);
 	});
 });
+
+$("#form-close").click(function(){
+	$('.form-grid-takeover').fadeOut(1000, function(){
+		$('.contact-grid').fadeIn(1000);
+		$('.contact-text').fadeIn(1000);
+	});
+});
+
+
 // $('.form-grid-takeover').click(function(event){
 // 	console.log(event.target,$(event.target),$(event.target).hasClass("field"));
 // 	if ($(event.target).hasClass("field") === false) {
@@ -198,7 +209,7 @@ $(".contact-grid-upper-left").click(function(){
 // 			$('.form-grid-takeover').removeClass("open")
 // 		});
 // 	}
-    			
+
 // }); 
 
 //FORM SUBMIT BUTTON THANK YOU
@@ -207,6 +218,7 @@ $('#form-submit-button').on('click', function() {
 	alert('Thank you for your message!');
 	$('.form-grid-takeover').fadeOut(1000, function() {
 		$('.contact-grid').fadeIn(1000);
+		$('.contact-text').fadeIn(1000);
 	});
 });
 
@@ -217,7 +229,7 @@ $('.pers-top-section').ready(function(){
 //AOS ANIMATE VIEWPORT
 
 $(function() {
-  AOS.init({delay:300, duration:500});
+	AOS.init({delay:200, duration:350});
 });
 
 // ABOUT TOP IMAGE HOVER //

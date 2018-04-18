@@ -8,7 +8,7 @@
 
 header {
 	width: 100%;
-	/*height: 12vh;*/
+	height: 12vh;
 	background-color: black;
 	bottom-border: solid 5px yellow;
 	overflow: hidden;
@@ -19,8 +19,9 @@ nav {
   	float: right;
   	padding-right: 40px;
   	/*padding-top: 22px;*/
-  	text-align: right;}
-
+  	text-align: right;
+  	position: absolute;
+}
 
 h1 {
 	color: yellow;
@@ -225,7 +226,7 @@ html body {
 
 .profile-upper-box {
   	width: 100%; 
-  	height: 91vh;
+  	height: 88vh;
     background: url(../images/WorkDesk.jpeg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -554,7 +555,7 @@ div .profile-middle-section-left-bottom {
     background-color:grey;
 	background-size: cover;
 	width: 100%;
-	height: 91vh;
+	height: 88vh;
 }
 
 .pers-top-text {
@@ -593,7 +594,7 @@ div .profile-middle-section-left-bottom {
 
 .pers-top-picture {
 	width: 100%;
-	height: 100vh;
+	height: 88vh;
 	   transition: right 3s;
 }
 
@@ -700,7 +701,9 @@ iframe.map {
     transition: 1.5s;
 }
 
-.scale.triggeredCSS3     {transform : scale(1.6); }
+.scale.triggeredCSS3 {
+	transform : scale(1.6); 
+}
 
 .ff-box:hover {
 	animation: shake .2s; 
@@ -708,8 +711,10 @@ iframe.map {
 }
 
 @keyframes shake {
-	    50% { transform: translate(-1px, -2px) rotate(-1deg); }
+	50% { 
+	    transform: translate(-1px, -2px) rotate(-1deg); 
 	}
+}
 
 #ff1, #ff2, #ff3, #ff4, #ff5, #ff6 {
 	height: 100%;
@@ -718,20 +723,14 @@ iframe.map {
     color: white;
 }
 
-/*#ff1p, #ff2p, #ff3p, #ff4p, #ff5p, #ff6p {
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: black;
-	font-size: 25px;
-	position: absolute;
-    top: 30%;
-    right: 6em;
-    width: 33%;
-}*/
-
 .flipped {
 	transform: rotateX(360deg);
 	transition: 1s;
+}
+
+.paragraph-link {
+	text-decoration: none;
+	color: #6D6968;
 }
 
 .pers-section-bottom {
@@ -768,13 +767,12 @@ iframe.map {
 
 .pers-bottom-photo {
 	background-image: url(../images/Hawaiiblackrock1.png);
-	height: 360px;
-	width: 100%;
+	height: 350px;
 	clear: both;
 	border: solid 1px grey;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-	background-size: 100% 420px; 
+	background-size: 100% 350px; 
 	background-position: bottom;
 	background-color: darkgrey;
 }
@@ -851,11 +849,6 @@ iframe.map {
 	text-decoration: none;
 	color: black;
 	opacity: .7;
-	/*background-color: #c0c6c4;*/
-/*	padding-left: 79px;
-	padding-right: 70px;
-	padding-bottom: 25px;
-	padding-top: 30px;*/
 	transition: all ease 0.8s;
 }
 
@@ -877,7 +870,7 @@ iframe.map {
 
 .contact-banner {
 	background-image: url(../images/New-Zealand-Mt-Cook-250.jpg);
-	height: 91vh;
+	height: 88vh;
 	width: 100%;
 	position: relative;
 	background-repeat: no-repeat;
@@ -887,15 +880,10 @@ iframe.map {
 	background-size: cover;
 }
 
-.contact-body {
-	height: 400px;
-	width: 100%;
-	background-color: lightgrey;
-}
-
 .contact-text {
 	text-align: center;
-	padding-top: 120px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 25px;
 	color: white;
@@ -910,14 +898,13 @@ iframe.map {
 .contact-grid {
 	width: 500px;
 	margin: auto;
-	margin-top: 60px;
 }
 
 .contact-grid-upper-left {
 	height: 50%;
 	width: 40%;
 	float: left;
-	margin: 25px;
+	margin-right: 25px;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -926,7 +913,7 @@ iframe.map {
 	height: 50%;
 	width: 40%;
 	float: right;
-	margin: 25px;
+	margin-left: 25px;
 	cursor: pointer;
 	display: inline-block;
 	padding-bottom: 50px;
@@ -940,16 +927,21 @@ iframe.map {
 
 .form-grid-takeover {
 	width: 70%;
+	height: 88vh;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #002C8B;
 	border: solid 3px #002C8B;
-	padding: 3px;
+	/*padding: 3px;*/
 	font-size: 30px;
-	margin: 70px auto; 
-	background-color: black;	
+	margin: auto; 
+	background-color: black;
+	opacity: .7;
 	border-radius: 15px;
-	position: absolute;
+}
+
+.form-grid-takeover2 {
+	height: 87vh
 }
 
 #form-grid-takeover-animate {
@@ -958,58 +950,51 @@ iframe.map {
     background-color: #8CB0FF;
 }
 
-.contact-filler {
-	height: 100px;
-	width: 100%;
-}
-
 #firstname-form {
 	display: inline-block;
 	float: left;
 	width: 35%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	margin-left: 10%;
-	opacity: .5;
+	opacity: .3;
 }
-
 
 #lastname-form {
 	display: inline-block;
 	float: right;
 	width: 35%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	margin-right: 10%;
-	opacity: .5;
+	opacity: .3;
 }
 
 #email-form {
 	display: block;
 	width: 80%;
 	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	opacity: .5;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	opacity: .3;
 }
 
 #subject-form {
 	display: block;
 	width: 80%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	margin: auto;
-	opacity: .5;
+	opacity: .3;
 }
 
-
 #message-form {
-	padding: 100px;
+	padding: 75px;
 	display: block;
 	text-align: center;
 	width: 80%;
 	margin: auto;
-	opacity: .5;
+	opacity: .3;
 }
 
 #firstname-form, #lastname-form, #email-form, #subject-form, #message-form {
@@ -1031,9 +1016,7 @@ iframe.map {
 	height: 40px;
 	border: solid 3px rgba(128,128,128,0.8);
 	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	color: grey;
