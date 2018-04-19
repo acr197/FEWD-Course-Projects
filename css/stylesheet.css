@@ -8,19 +8,18 @@
 
 header {
 	width: 100%;
-	height: 12vh;
 	background-color: black;
 	bottom-border: solid 5px yellow;
-	overflow: hidden;
+	overflow: hidden; 
 }
 
 nav {
   	width: 70%;
   	float: right;
   	padding-right: 40px;
-  	/*padding-top: 22px;*/
   	text-align: right;
-  	position: absolute;
+  	position: absolute; 
+	height: 10vh;
 }
 
 h1 {
@@ -41,8 +40,7 @@ footer {
 	background-color: black;
 	clear: both;
 	color: white;
-	/*visibility: hidden;*/
-	display: none;
+	/*display: none;*/
 }
 
 iframe {
@@ -54,7 +52,10 @@ iframe {
 }
 
 html body {
-	margin:0; padding:0; width:100%; height:100%;
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100%;
 }
 
 .clearfix::after {
@@ -76,6 +77,7 @@ html body {
 	font-weight: 300;
 	transition: all ease 0.8s;
 	display: inline-block;
+    height: 10vh;
 }
 
 .nav-text-current {
@@ -91,11 +93,8 @@ html body {
 	display: inline-block;
 	pointer-events: none;
     cursor: default;
+    height: 10vh;
 }
-
-#wrapper { width:100%; height:100%; background-color:#CCC; display:none;position: absolute;}
-
-#animation { width:100%; height:100%; background-color:#222; position: absolute;}
 
 .nav-text:hover {
     box-shadow: inset 200px 0 0 0 grey;
@@ -155,6 +154,7 @@ html body {
     transform: scale(1.2);
    	transition: all 1s ;
 }
+
 .transition-text {
     font-size: 2.4em;
    	transition: all 1s ;
@@ -164,10 +164,6 @@ html body {
 	height: 50%;
 	width: 50%;
 	float: left;
-	/*display: inline;*/
-    /*position: fixed;*/
-    /*bottom: 0;*/
-	/*transition: 0.6s;*/
 }
 
 .home-grid-upper-right {
@@ -226,7 +222,7 @@ html body {
 
 .profile-upper-box {
   	width: 100%; 
-  	height: 88vh;
+  	height: 90vh;
     background: url(../images/WorkDesk.jpeg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -555,7 +551,7 @@ div .profile-middle-section-left-bottom {
     background-color:grey;
 	background-size: cover;
 	width: 100%;
-	height: 88vh;
+	height: 90vh;
 }
 
 .pers-top-text {
@@ -594,7 +590,7 @@ div .profile-middle-section-left-bottom {
 
 .pers-top-picture {
 	width: 100%;
-	height: 88vh;
+	height: 90vh;
 	   transition: right 3s;
 }
 
@@ -870,7 +866,7 @@ iframe.map {
 
 .contact-banner {
 	background-image: url(../images/New-Zealand-Mt-Cook-250.jpg);
-	height: 88vh;
+	height: 90vh;
 	width: 100%;
 	position: relative;
 	background-repeat: no-repeat;
@@ -927,7 +923,7 @@ iframe.map {
 
 .form-grid-takeover {
 	width: 70%;
-	height: 88vh;
+	height: 90vh;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #002C8B;
@@ -954,8 +950,8 @@ iframe.map {
 	display: inline-block;
 	float: left;
 	width: 35%;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	margin-left: 10%;
 	opacity: .3;
 }
@@ -964,8 +960,8 @@ iframe.map {
 	display: inline-block;
 	float: right;
 	width: 35%;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	margin-right: 10%;
 	opacity: .3;
 }
@@ -974,16 +970,16 @@ iframe.map {
 	display: block;
 	width: 80%;
 	margin: auto;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	opacity: .3;
 }
 
 #subject-form {
 	display: block;
 	width: 80%;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	margin: auto;
 	opacity: .3;
 }
@@ -994,6 +990,7 @@ iframe.map {
 	text-align: center;
 	width: 80%;
 	margin: auto;
+	margin-top: 3%;
 	opacity: .3;
 }
 
@@ -1080,12 +1077,6 @@ header nav .close-nav {
   display: block;
   color:yellow;   background-color: yellow;
 }
-
-/*@media only screen and (max-width:800px){
-  header{
-    height: 60px;
-  }
-}*/
 
 header nav .close-nav span {
   display: block; 
@@ -1227,7 +1218,7 @@ header nav .close-nav span.right {
   }
 }
 
-/* about resume */
+/* resume loader */
 
 .lds-ellipsis {
   width: 64px;

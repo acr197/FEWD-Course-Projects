@@ -199,8 +199,7 @@ $("#form-close").click(function(){
 		$('.contact-text').fadeIn(1000);
 	});
 });
-
-
+//		click out of form escape
 // $('.form-grid-takeover').click(function(event){
 // 	console.log(event.target,$(event.target),$(event.target).hasClass("field"));
 // 	if ($(event.target).hasClass("field") === false) {
@@ -208,8 +207,7 @@ $("#form-close").click(function(){
 // 			$('.contact-grid').fadeIn(1000);
 // 			$('.form-grid-takeover').removeClass("open")
 // 		});
-// 	}
-
+// 	  }
 // }); 
 
 //FORM SUBMIT BUTTON THANK YOU
@@ -226,17 +224,8 @@ $('.pers-top-section').ready(function(){
 	$('.pers-top-section').css({'left':'0'});
 });
 
-//AOS ANIMATE VIEWPORT
+//AOS ANIMATE VIEWPORT ... http://michalsnik.github.io/aos/
 
 $(function() {
 	AOS.init({delay:200, duration:350});
 });
-
-// ABOUT TOP IMAGE HOVER //
-
-// $('#camelimage').mouseover(function() {
-// 	$('#camelimage').attr('src', 'images/CairoCamel2.jpg');
-// });
-// $("#camelimage").mouseleave(function () {
-//     $("#camelimage").attr('src', 'images/CairoCamel.jpg');
-// });
