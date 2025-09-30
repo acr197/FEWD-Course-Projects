@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Poiret+One|Josefin+Sans:300,400,700|Abril+Fatface" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew Ryan">
+	<meta name="description" content="View and Download Andrew Ryan's Resume">
+	<title>Andrew Ryan's Resume</title>
+</head>
+<body>
+	<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+	<div id='animation-resume'></div>
+	<header>
+		<a href="index.html">
+			<h1>Andrew Ryan</h1>
+		</a>
+		<div class="hamburger">
+			<span></span><span></span>
+		</div>		
+		<nav>
+			<a class="nav-text" href="profile.html">Profile</a> 
+			<a class="nav-text" href="about.html">About</a> 
+			<a class="nav-text-current" href="">Resume</a> 
+			<a class="nav-text" href="contact.html">Contact</a> 
+		</nav>
+		<div class="close-nav">
+			<span class="left"></span><span class="right"></span>
+		</div>
+	</header>
+	<section class='resume-section load'>
+		<div class="resume-box"> RESUME 
+			<a id='resume-button'>DOWNLOAD</a>
+			<div class-'resume-dropdown'>
+				<div class='resume-hover'>
+					<ul id='resume-ul-hover'>
+						<a href="images/ACRresumePDF2018.pdf" download><li class="resume-dropdown-box">PDF
+						</li></a>
+						<a href="images/ACRresumePNG2018.png" download><li class="resume-dropdown-box">PNG
+						</li></a>
+						<a href="#"><li class="resume-dropdown-box">PSD
+						</li></a>
+						<a href="#"><li class="resume-dropdown-box">TXT
+						</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="pdf-contain">
+				<iframe id="resume" src="images/ACRresumePDF2018.pdf" width="640" height="480"></iframe>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-text">
+			&copy; Andrew Ryan 2018
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
