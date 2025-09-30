@@ -1,6 +1,8 @@
 # FEWD Course Projects  
 
-Collection of front-end web development projects completed during a Front End Web Development course.  
+👴 *Back in my day, we didn’t have AI to write our websites for us…we hand-coded them by candlelight.*  
+
+A collection of front-end web development projects completed during a Front End Web Development course.  
 These exercises cover the foundations of building websites from scratch with **HTML, CSS, and JavaScript**.  
 
 ## Projects Included
@@ -15,4 +17,3 @@ These exercises cover the foundations of building websites from scratch with **H
 ## Notes
 - Projects are preserved as originally written (2017–2018).  
 - Emphasis is on **core web fundamentals**: semantic markup, responsive design, reusable CSS, and basic JavaScript interactivity.  
-- Serves as a snapshot of my early development work before modern frameworks and AI tools.  
