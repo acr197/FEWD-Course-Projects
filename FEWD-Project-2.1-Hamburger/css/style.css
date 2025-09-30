@@ -1,0 +1,137 @@
+/* BASE */
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.clear-parent {
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  padding:0 20px;
+  position: relative;
+  z-index: 9999;
+}
+
+/* on mobile I want to change the height of my header to 60px */
+@media only screen and (max-width:580px){
+  header{
+    height: 60px;
+  }
+}
+
+header .logo {
+  float: left;
+  line-height: 73px;
+}
+
+header .logo h1 {
+  margin:0;
+}
+
+/* on mobile I want to change the line-height of my logo to 60px */
+@media only screen and (max-width:580px){
+  header .logo {
+    line-height: 60px;
+  }
+}
+
+header .main-nav {
+  float: right;
+}
+
+header nav {
+  position: relative;
+  z-index: 100;
+  line-height: 80px;
+}
+
+/* on mobile I want to make my nav fixed, with a top value of 0, left value of 100%, background color of black, width and height 100% and padding top and bottom of 20px */
+@media only screen and (max-width:580px){
+  header nav {
+    position: fixed;
+    top:0;
+    left:100%;
+    background-color:black;
+    width:100%;
+    height:100%;
+    padding:20px 0px;
+  }
+}
+
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+
+}
+header nav ul li {
+  display: inline-block;
+  height: 30px;
+  margin-left: 20px;
+}
+
+/* on mobile I want to these styles for the list items in my nav: height: auto; display: block; color:#fff; text-align: center; margin-left: 0px; font-size: 1.5em; line-height: 2em;*/
+
+header nav .close-nav {
+  position: absolute;
+  top:30px;
+  right:30px;
+  z-index: 90;
+  cursor: pointer;
+  display: none;
+}
+
+/* on mobile I want to show the close-nav button by setting display to block */
+
+
+header nav .close-nav span {
+  display: block;
+  width: 20px;
+  height:3px;
+  background-color: #fff;
+  transform: rotate(45deg) translate(2px);
+  -webkit-transform: rotate(45deg) translate(2px);
+  -moz-transform: rotate(45deg) translate(2px);
+}
+
+header nav .close-nav span.right {
+  transform: rotate(-45deg) translate(2px);
+  -webkit-transform: rotate(-45deg) translate(2px);
+  -moz-transform: rotate(-45deg) translate(2px);
+}
+
+.hamburger {
+  position: fixed;
+  top:25px;
+  right:25px;
+  z-index: 90;
+  display: none;
+}
+
+/* on mobile I want to show the hamburger button by setting display to block */
+@media only screen and (max-width:580px){
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height:3px;
+  background-color: #000;
+  margin:2px 0;
+}
